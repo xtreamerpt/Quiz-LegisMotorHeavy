@@ -1,0 +1,3885 @@
+{
+  "metadata": {
+    "titulo": "Banco de Perguntas — Legislação de Motorista de Pesados",
+    "versao": "1.0",
+    "data_criacao": "2025",
+    "total_perguntas": 205,
+    "lingua": "pt-PT",
+    "ambito": "União Europeia e Portugal",
+    "referencias_legais": [
+      "Regulamento (CE) n.º 561/2006",
+      "Regulamento (UE) n.º 165/2014",
+      "Diretiva 96/53/CE",
+      "Regulamento (CE) n.º 1071/2009",
+      "Regulamento (CE) n.º 1072/2009",
+      "Diretiva 2002/15/CE",
+      "Diretiva (UE) 2022/2561",
+      "AETR",
+      "Decreto-Lei n.º 257/2007",
+      "Decreto-Lei n.º 237/2007",
+      "Decreto-Lei n.º 41-A/2010",
+      "Decreto-Lei n.º 60/2016",
+      "Portaria n.º 331-B/98",
+      "Deliberação n.º 517/2018",
+      "Despacho Conjunto n.º 113-A/98"
+    ]
+  },
+  "configuracao_testes": {
+    "modos_disponiveis": [
+      {
+        "id": "simulacao_completa",
+        "nome": "Simulação Completa",
+        "num_perguntas": 40,
+        "tempo_limite_minutos": 60,
+        "aleatorizar": true
+      },
+      {
+        "id": "treino_por_modulo",
+        "nome": "Treino por Módulo",
+        "num_perguntas": 10,
+        "tempo_limite_minutos": null,
+        "aleatorizar": true
+      },
+      {
+        "id": "exame_rapido",
+        "nome": "Exame Rápido",
+        "num_perguntas": 20,
+        "tempo_limite_minutos": 30,
+        "aleatorizar": true
+      }
+    ],
+    "niveis_dificuldade": ["facil", "intermedio", "avancado"],
+    "tipos_pergunta": ["escolha_multipla"]
+  },
+  "modulos": [
+    {
+      "id": "modulo_1",
+      "nome": "Tempos de Condução e Repouso",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006",
+      "subcategorias": [
+        "Âmbito de Aplicação",
+        "Tempo de Condução",
+        "Repouso Diário",
+        "Repouso Semanal",
+        "Condução em Equipa",
+        "Cenários Práticos"
+      ]
+    },
+    {
+      "id": "modulo_2",
+      "nome": "Tacógrafo",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014",
+      "subcategorias": [
+        "Definições e Componentes",
+        "Tacógrafo Inteligente",
+        "Obrigações e Utilização",
+        "Cartões Tacográficos",
+        "Controlo e Sanções"
+      ]
+    },
+    {
+      "id": "modulo_3",
+      "nome": "Pesos e Dimensões",
+      "referencia_legal": "Diretiva 96/53/CE",
+      "subcategorias": [
+        "Definições",
+        "Limites de Pesos e Dimensões",
+        "Transporte Intermodal",
+        "Veículos de Combustíveis Alternativos"
+      ]
+    },
+    {
+      "id": "modulo_4",
+      "nome": "Acesso à Atividade",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009",
+      "subcategorias": [
+        "Requisitos Fundamentais",
+        "Gestor de Transportes",
+        "Âmbito de Aplicação e Exceções"
+      ]
+    },
+    {
+      "id": "modulo_5",
+      "nome": "Acesso ao Mercado e Cabotagem",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009",
+      "subcategorias": [
+        "Licença Comunitária",
+        "Cabotagem",
+        "Definições"
+      ]
+    },
+    {
+      "id": "modulo_6",
+      "nome": "Formação e CAM",
+      "referencia_legal": "Diretiva (UE) 2022/2561 e legislação nacional",
+      "subcategorias": [
+        "Certificado de Aptidão para Motorista",
+        "Formação Profissional",
+        "Cartas de Condução"
+      ]
+    },
+    {
+      "id": "modulo_7",
+      "nome": "Cenários Práticos Integrados",
+      "referencia_legal": "Vários diplomas",
+      "subcategorias": ["Cenários"]
+    },
+    {
+      "id": "modulo_8",
+      "nome": "Legislação Nacional Portuguesa",
+      "referencia_legal": "Vários diplomas nacionais",
+      "subcategorias": [
+        "Transporte por Conta de Outrem",
+        "Transporte por Conta Própria",
+        "Mercadorias Perigosas",
+        "Restrições à Circulação"
+      ]
+    },
+    {
+      "id": "modulo_9",
+      "nome": "AETR",
+      "referencia_legal": "Acordo Europeu relativo ao Trabalho das Tripulações",
+      "subcategorias": ["Âmbito e Aplicação"]
+    },
+    {
+      "id": "modulo_10",
+      "nome": "Tacógrafo Inteligente e Inovações",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014",
+      "subcategorias": ["Tacógrafo Inteligente"]
+    },
+    {
+      "id": "modulo_11",
+      "nome": "Combustíveis Alternativos e Emissões",
+      "referencia_legal": "Diretiva 96/53/CE",
+      "subcategorias": ["Combustíveis Alternativos"]
+    },
+    {
+      "id": "modulo_12",
+      "nome": "Tempo de Trabalho",
+      "referencia_legal": "Diretiva 2002/15/CE",
+      "subcategorias": ["Organização do Tempo de Trabalho"]
+    },
+    {
+      "id": "modulo_13",
+      "nome": "Cartas de Condução (Portugal)",
+      "referencia_legal": "Legislação nacional",
+      "subcategorias": ["Categorias de Cartas"]
+    },
+    {
+      "id": "modulo_14",
+      "nome": "Transporte de Mercadorias Perigosas (ADR)",
+      "referencia_legal": "Decreto-Lei n.º 41-A/2010",
+      "subcategorias": ["ADR"]
+    },
+    {
+      "id": "modulo_15",
+      "nome": "Restrições à Circulação",
+      "referencia_legal": "Portaria n.º 331-B/98",
+      "subcategorias": ["Restrições"]
+    },
+    {
+      "id": "modulo_16",
+      "nome": "Formação Profissional",
+      "referencia_legal": "Legislação nacional",
+      "subcategorias": ["Capacidade Profissional"]
+    },
+    {
+      "id": "modulo_17",
+      "nome": "Transporte por Conta Própria vs. Conta de Outrem",
+      "referencia_legal": "Decreto-Lei n.º 257/2007",
+      "subcategorias": ["Regimes de Transporte"]
+    }
+  ],
+  "perguntas": [
+    {
+      "id": 1,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A partir de que data o Regulamento (CE) n.º 561/2006 passa a aplicar-se ao transporte internacional de mercadorias com veículos de massa máxima superior a 2,5 toneladas?",
+      "opcoes": [
+        "1 de janeiro de 2025",
+        "1 de julho de 2026",
+        "1 de janeiro de 2027",
+        "1 de julho de 2025"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O Regulamento (CE) n.º 561/2006, conforme alterado, alarga o âmbito de aplicação ao transporte internacional e de cabotagem com veículos de massa máxima superior a 2,5 toneladas a partir de 1 de julho de 2026.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 2.º"
+    },
+    {
+      "id": 2,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Regulamento (CE) n.º 561/2006 aplica-se ao transporte de passageiros em veículos construídos para transportar quantas pessoas, incluindo o condutor?",
+      "opcoes": [
+        "Mais de 5 pessoas",
+        "Mais de 7 pessoas",
+        "Mais de 9 pessoas",
+        "Mais de 12 pessoas"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O regulamento aplica-se ao transporte de passageiros em veículos construídos para transportar mais de 9 pessoas, incluindo o condutor.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 2.º, n.º 1, alínea b)"
+    },
+    {
+      "id": 3,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em que situação o AETR substitui o Regulamento (CE) n.º 561/2006?",
+      "opcoes": [
+        "Apenas em transportes nacionais",
+        "Em transportes internacionais efetuados em parte fora da UE, Suíça e EEE",
+        "Em transportes de mercadorias perigosas",
+        "Em transportes com veículos de menos de 3,5 toneladas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O AETR aplica-se em substituição do Regulamento (CE) n.º 561/2006 em transportes internacionais efetuados em parte fora da UE, Suíça e EEE.",
+      "referencia_legal": "AETR, artigo 1.º"
+    },
+    {
+      "id": 4,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual dos seguintes veículos está isento do Regulamento (CE) n.º 561/2006?",
+      "opcoes": [
+        "Veículo de transporte de mercadorias de 12 toneladas",
+        "Autocarro de transporte regular de passageiros com percurso superior a 50 km",
+        "Veículo afeto ao serviço regular de passageiros com percurso não superior a 50 km",
+        "Camião de transporte internacional"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "Os veículos afetos ao serviço regular de passageiros com percurso não superior a 50 km estão isentos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 3.º, alínea a)"
+    },
+    {
+      "id": 5,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os veículos com velocidade máxima autorizada não superior a quantos km/h estão isentos do Regulamento (CE) n.º 561/2006?",
+      "opcoes": [
+        "30 km/h",
+        "40 km/h",
+        "50 km/h",
+        "60 km/h"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os veículos com velocidade máxima autorizada não superior a 40 km/h estão isentos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 3.º, alínea b)"
+    },
+    {
+      "id": 6,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um veículo de 7,5 toneladas utilizado para transportar materiais do próprio condutor num raio de 100 km está isento do Regulamento (CE) n.º 561/2006?",
+      "opcoes": [
+        "Sim, desde que a condução não seja a atividade principal",
+        "Não, nunca está isento",
+        "Apenas se for transporte internacional",
+        "Apenas se for transporte por conta de outrem"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Veículos utilizados para transporte não comercial de mercadorias com peso não superior a 7,5 toneladas estão isentos, desde que a condução não seja a atividade principal.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 3.º, alínea h)"
+    },
+    {
+      "id": 7,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os veículos das forças armadas, proteção civil, bombeiros e polícia estão abrangidos pelo Regulamento (CE) n.º 561/2006?",
+      "opcoes": [
+        "Sim, sem exceção",
+        "Não, estão isentos quando o transporte resulta das suas funções",
+        "Apenas em transportes internacionais",
+        "Apenas se forem veículos de mais de 12 toneladas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os veículos das forças armadas, proteção civil, bombeiros e polícia estão isentos quando o transporte resulta das suas funções.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 3.º, alínea e)"
+    },
+    {
+      "id": 8,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Regulamento (CE) n.º 561/2006 aplica-se a que tipo de transportes rodoviários?",
+      "opcoes": [
+        "Apenas transportes internacionais",
+        "Apenas transportes nacionais",
+        "Transportes exclusivamente no interior da Comunidade e entre a Comunidade, Suíça e EEE",
+        "Apenas transportes de mercadorias"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O regulamento aplica-se ao transporte rodoviário realizado exclusivamente no interior da Comunidade ou entre a Comunidade, a Suíça e os países do EEE.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 2.º, n.º 1"
+    },
+    {
+      "id": 9,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os veículos históricos com estatuto comercial estão isentos do Regulamento (CE) n.º 561/2006?",
+      "opcoes": [
+        "Sim, quando utilizados para transporte não comercial",
+        "Não, nunca",
+        "Apenas se forem de passageiros",
+        "Apenas se tiverem mais de 30 anos"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Os veículos históricos com estatuto comercial estão isentos quando utilizados para transporte não comercial.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 3.º, alínea i)"
+    },
+    {
+      "id": 10,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Âmbito de Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um veículo especializado de pronto-socorro circulando num raio de quantos km a partir do local de afetação está isento?",
+      "opcoes": [
+        "50 km",
+        "100 km",
+        "150 km",
+        "200 km"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os veículos especializados de pronto-socorro estão isentos quando circulam num raio de 100 km a partir do local de afetação.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 3.º, alínea f)"
+    },
+    {
+      "id": 11,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o tempo máximo de condução diário permitido?",
+      "opcoes": [
+        "8 horas",
+        "9 horas",
+        "10 horas",
+        "12 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tempo máximo de condução diário é de 9 horas, podendo ser prolongado para 10 horas no máximo duas vezes por semana.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º, n.º 1"
+    },
+    {
+      "id": 12,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tempo de condução diário pode ser prolongado para 10 horas quantas vezes por semana?",
+      "opcoes": [
+        "Uma vez",
+        "Duas vezes",
+        "Três vezes",
+        "Todos os dias"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tempo de condução diário pode ser prolongado para 10 horas no máximo duas vezes por semana.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º, n.º 1"
+    },
+    {
+      "id": 13,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o tempo máximo de condução semanal?",
+      "opcoes": [
+        "45 horas",
+        "48 horas",
+        "56 horas",
+        "60 horas"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O tempo máximo de condução semanal é de 56 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º, n.º 2"
+    },
+    {
+      "id": 14,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o tempo máximo de condução acumulado em duas semanas consecutivas?",
+      "opcoes": [
+        "80 horas",
+        "90 horas",
+        "100 horas",
+        "112 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tempo máximo de condução em duas semanas consecutivas é de 90 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º, n.º 3"
+    },
+    {
+      "id": 15,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor que conduziu 10 horas na segunda-feira e 10 horas na terça-feira. Pode conduzir 10 horas na quarta-feira?",
+      "opcoes": [
+        "Sim, desde que não ultrapasse 56 horas semanais",
+        "Não, já esgotou as duas extensões diárias permitidas na semana",
+        "Sim, se compensar com descanso",
+        "Não, porque o máximo é sempre 9 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O condutor já utilizou as duas extensões diárias permitidas na semana (segunda e terça), pelo que na quarta-feira só pode conduzir 9 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º, n.º 1"
+    },
+    {
+      "id": 16,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tempo de condução diário é calculado entre que momentos?",
+      "opcoes": [
+        "Entre o início e o fim de cada dia civil",
+        "Entre o final de um período de repouso diário e o início do período de repouso diário seguinte",
+        "Entre as 00:00 e as 24:00 de cada dia",
+        "Entre o início e o fim de cada período de trabalho"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tempo de condução diário é o tempo total acumulado de condução entre o final de um período de repouso diário e o início do período de repouso diário seguinte.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 4.º, alínea k)"
+    },
+    {
+      "id": 17,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tempo de condução semanal é calculado entre que momentos?",
+      "opcoes": [
+        "De segunda-feira 00:00 a domingo 24:00",
+        "De domingo 00:00 a sábado 24:00",
+        "De segunda-feira 08:00 a sexta-feira 18:00",
+        "Depende do país"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O tempo de condução semanal é o tempo total acumulado de condução durante uma semana, de segunda-feira 00:00 a domingo 24:00.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 4.º, alínea l)"
+    },
+    {
+      "id": 18,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Após 4,5 horas de condução, qual é a pausa mínima obrigatória?",
+      "opcoes": [
+        "15 minutos",
+        "30 minutos",
+        "45 minutos",
+        "60 minutos"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "Após 4,5 horas de condução, o condutor deve fazer uma pausa de pelo menos 45 minutos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 7.º"
+    },
+    {
+      "id": 19,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A pausa de 45 minutos pode ser substituída por:",
+      "opcoes": [
+        "Duas pausas de 20 minutos",
+        "Uma pausa de 15 minutos e outra de 30 minutos",
+        "Três pausas de 15 minutos",
+        "Uma pausa de 10 minutos e outra de 35 minutos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A pausa de 45 minutos pode ser substituída por uma pausa de pelo menos 15 minutos seguida de uma pausa de pelo menos 30 minutos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 7.º"
+    },
+    {
+      "id": 20,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Tempo de Condução",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "As pausas na condução podem ser gozadas no veículo?",
+      "opcoes": [
+        "Sim, sempre",
+        "Não, nunca",
+        "Sim, se o veículo estiver equipado com cama e em repouso",
+        "Apenas em países terceiros"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "As pausas podem ser gozadas no veículo desde que este esteja equipado com cama e em repouso, conforme interpretação da Comissão Europeia.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 4.º, alínea d)"
+    },
+    {
+      "id": 21,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Diário",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a duração mínima do período de repouso diário regular?",
+      "opcoes": [
+        "9 horas",
+        "10 horas",
+        "11 horas",
+        "12 horas"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O período de repouso diário regular tem uma duração mínima de 11 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 2"
+    },
+    {
+      "id": 22,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Diário",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a duração mínima do período de repouso diário reduzido?",
+      "opcoes": [
+        "8 horas",
+        "9 horas",
+        "10 horas",
+        "11 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O período de repouso diário reduzido tem uma duração mínima de 9 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 4"
+    },
+    {
+      "id": 23,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Diário",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O período de repouso diário pode ser dividido em dois períodos. Quais são as durações mínimas?",
+      "opcoes": [
+        "4 horas + 8 horas",
+        "3 horas + 9 horas",
+        "2 horas + 10 horas",
+        "5 horas + 7 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O período de repouso diário pode ser dividido em dois períodos: o primeiro com pelo menos 3 horas e o segundo com pelo menos 9 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 2"
+    },
+    {
+      "id": 24,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Diário",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quando dividido, o repouso diário total é de quantas horas?",
+      "opcoes": [
+        "11 horas",
+        "12 horas",
+        "13 horas",
+        "14 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Quando dividido, o repouso diário total é de 12 horas (3 + 9).",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 2"
+    },
+    {
+      "id": 25,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Diário",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "O período de repouso diário reduzido pode ser gozado quantas vezes entre dois períodos de repouso semanal?",
+      "opcoes": [
+        "Uma vez",
+        "Duas vezes",
+        "Três vezes",
+        "Quatro vezes"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O período de repouso diário reduzido pode ser gozado no máximo três vezes entre dois períodos de repouso semanal.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 4"
+    },
+    {
+      "id": 26,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Diário",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor terminou o repouso diário às 06:00. Até que horas, no máximo, deve iniciar o novo repouso diário?",
+      "opcoes": [
+        "06:00 do dia seguinte",
+        "24:00 do mesmo dia",
+        "06:00 de dois dias depois",
+        "18:00 do mesmo dia"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Em cada período de 24 horas após o final do período de repouso diário anterior, o condutor deve gozar um novo período de repouso diário. Logo, até às 06:00 do dia seguinte.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 2"
+    },
+    {
+      "id": 27,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Semanal",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a duração mínima do período de repouso semanal regular?",
+      "opcoes": [
+        "24 horas",
+        "36 horas",
+        "45 horas",
+        "48 horas"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O período de repouso semanal regular tem uma duração mínima de 45 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 28,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Semanal",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a duração mínima do período de repouso semanal reduzido?",
+      "opcoes": [
+        "12 horas",
+        "24 horas",
+        "36 horas",
+        "45 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O período de repouso semanal reduzido tem uma duração mínima de 24 horas consecutivas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 29,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Semanal",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em cada duas semanas consecutivas, o condutor deve gozar:",
+      "opcoes": [
+        "Dois repousos semanais regulares",
+        "Um repouso semanal regular e um reduzido",
+        "Dois repousos semanais reduzidos",
+        "Apenas um repouso semanal regular"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Em cada duas semanas consecutivas, o condutor deve gozar pelo menos dois períodos de repouso semanal regular e um período de repouso semanal reduzido, sendo que os dois repousos regulares devem ser gozados em semanas diferentes.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 30,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Semanal",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O repouso semanal reduzido deve ser compensado em que prazo?",
+      "opcoes": [
+        "Na semana seguinte",
+        "No prazo de duas semanas",
+        "No prazo de três semanas",
+        "No prazo de um mês"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O repouso semanal reduzido deve ser compensado com um período de descanso equivalente, gozado juntamente com outro período de repouso com pelo menos 9 horas, no prazo de três semanas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 31,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Semanal",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A compensação do repouso semanal reduzido deve ser gozada juntamente com:",
+      "opcoes": [
+        "Um período de repouso de pelo menos 9 horas",
+        "Uma pausa de 45 minutos",
+        "Um período de repouso de pelo menos 11 horas",
+        "Qualquer pausa"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A compensação deve ser gozada juntamente com outro período de repouso com pelo menos 9 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 32,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Repouso Semanal",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "O período de repouso semanal deve começar o mais tardar no fim de quantos períodos de 24 horas após o repouso semanal anterior?",
+      "opcoes": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O período de repouso semanal deve começar o mais tardar no fim de seis períodos de 24 horas após o final do período de repouso semanal anterior.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 33,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Condução em Equipa",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Na condução em equipa, a partir de que momento é obrigatório ter um segundo condutor no veículo?",
+      "opcoes": [
+        "30 minutos",
+        "1 hora",
+        "2 horas",
+        "4 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Na condução em equipa, durante a primeira hora o segundo condutor é opcional; após esse período, é obrigatório.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 4.º, alínea o)"
+    },
+    {
+      "id": 34,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Condução em Equipa",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Na condução em equipa, cada condutor deve gozar um repouso diário de quantas horas em cada período de 30 horas?",
+      "opcoes": [
+        "7 horas",
+        "8 horas",
+        "9 horas",
+        "11 horas"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "Na condução em equipa, cada condutor deve gozar um repouso diário de pelo menos 9 horas em cada período de 30 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 5"
+    },
+    {
+      "id": 35,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Cenários Práticos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduziu 4 horas, fez 30 minutos de pausa, conduziu mais 2 horas. Cumpriu as regras?",
+      "opcoes": [
+        "Sim, porque fez uma pausa",
+        "Não, a pausa é insuficiente (deve ser 45 minutos)",
+        "Sim, porque não ultrapassou 10 horas",
+        "Não, porque devia ter feito pausa ao fim de 3 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A pausa de 30 minutos é insuficiente. Após 4,5 horas de condução é obrigatória uma pausa de 45 minutos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 7.º"
+    },
+    {
+      "id": 36,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Cenários Práticos",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduziu 9 horas na segunda-feira e 10 horas na terça-feira. Quantas horas pode conduzir, no máximo, na quarta-feira, para respeitar o limite semanal?",
+      "opcoes": [
+        "9 horas",
+        "10 horas",
+        "11 horas",
+        "12 horas"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Já usou duas extensões diárias (terça-feira); na quarta só pode 9 horas. Limite semanal: 9+10+9=28h, ainda dentro das 56h.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º"
+    },
+    {
+      "id": 37,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Cenários Práticos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor fez 4,5 horas de condução, pausa de 15 minutos, mais 1 hora de condução, pausa de 30 minutos. Cumpriu as regras?",
+      "opcoes": [
+        "Sim, a pausa de 45 minutos pode ser dividida em 15+30",
+        "Não, a segunda pausa devia ser de 45 minutos",
+        "Não, a primeira pausa devia ser de 30 minutos",
+        "Sim, mas só se a segunda pausa fosse de 45 minutos"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A pausa de 45 minutos pode ser dividida em 15 + 30 minutos, desde que a segunda pausa seja de pelo menos 30 minutos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 7.º"
+    },
+    {
+      "id": 38,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Cenários Práticos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduziu 4 horas, pausa de 45 minutos, mais 4 horas. Pode conduzir mais 2 horas?",
+      "opcoes": [
+        "Sim, desde que não ultrapasse 10 horas diárias",
+        "Não, porque já fez 8 horas",
+        "Sim, porque fez pausa",
+        "Não, porque devia ter feito pausa ao fim de 4,5 horas"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Pode conduzir até 10 horas (se ainda tiver extensão disponível). Total seria 10 horas, com pausas adequadas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º"
+    },
+    {
+      "id": 39,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Cenários Práticos",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduziu 10 horas na segunda-feira, 9 horas na terça-feira, 9 horas na quarta-feira. Quantas horas já conduziu na semana?",
+      "opcoes": [
+        "28 horas",
+        "30 horas",
+        "32 horas",
+        "35 horas"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "10 + 9 + 9 = 28 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º"
+    },
+    {
+      "id": 40,
+      "modulo_id": "modulo_1",
+      "modulo": "Tempos de Condução e Repouso",
+      "subcategoria": "Cenários Práticos",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduziu 56 horas até sábado às 12:00. Pode conduzir mais?",
+      "opcoes": [
+        "Sim, até domingo",
+        "Não, já atingiu o limite semanal",
+        "Sim, se compensar",
+        "Sim, até 60 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O limite semanal é de 56 horas, pelo que o condutor já atingiu o máximo.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º, n.º 2"
+    },
+    {
+      "id": 41,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"unidade-veículo\" no contexto do tacógrafo?",
+      "opcoes": [
+        "O veículo completo",
+        "O tacógrafo, excluindo o sensor de movimentos e os cabos",
+        "Apenas o sensor de movimentos",
+        "Apenas a impressora"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A unidade-veículo é o próprio tacógrafo, excluindo o sensor de movimentos e os respetivos cabos.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, n.º 2"
+    },
+    {
+      "id": 42,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é o sensor de movimentos?",
+      "opcoes": [
+        "Um componente que emite sinal de velocidade e/ou distância",
+        "Um cartão inteligente",
+        "A impressora do tacógrafo",
+        "O ecrã de visualização"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O sensor de movimentos é o componente que emite sinais representativos da velocidade do veículo e/ou da distância percorrida.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, n.º 3"
+    },
+    {
+      "id": 43,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um cartão tacográfico?",
+      "opcoes": [
+        "Um cartão de crédito para abastecimento",
+        "Um cartão inteligente para identificação e transferência de dados",
+        "Um documento de transporte",
+        "Uma licença de condução"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O cartão tacográfico é um cartão inteligente utilizado com o tacógrafo, que permite identificar a função do titular e transferir/armazenar dados.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea e)"
+    },
+    {
+      "id": 44,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Que tipo de cartão identifica um condutor e memoriza os dados das suas atividades?",
+      "opcoes": [
+        "Cartão de empresa",
+        "Cartão de condutor",
+        "Cartão de oficina",
+        "Cartão de controlo"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O cartão de condutor identifica o condutor e memoriza os dados da sua atividade.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea f)"
+    },
+    {
+      "id": 45,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Que tipo de cartão permite visualizar, descarregar e imprimir dados bloqueados pela empresa?",
+      "opcoes": [
+        "Cartão de condutor",
+        "Cartão de empresa",
+        "Cartão de oficina",
+        "Cartão de controlo"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O cartão de empresa permite visualizar, descarregar e imprimir dados bloqueados pela empresa no tacógrafo.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea g)"
+    },
+    {
+      "id": 46,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quem emite o cartão de oficina?",
+      "opcoes": [
+        "O fabricante do veículo",
+        "A autoridade competente do Estado-Membro",
+        "A empresa de transportes",
+        "O condutor"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O cartão de oficina é emitido pela autoridade competente do Estado-Membro a pessoal designado de fabricantes, instaladores ou oficinas aprovadas.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea h)"
+    },
+    {
+      "id": 47,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"ativação\" de um tacógrafo?",
+      "opcoes": [
+        "A instalação física no veículo",
+        "A fase em que o tacógrafo se torna plenamente operacional com cartão de oficina",
+        "A primeira utilização pelo condutor",
+        "A calibração anual"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A ativação é a fase em que o tacógrafo se torna plenamente operacional, sendo realizada por uma oficina aprovada com cartão de oficina.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea i)"
+    },
+    {
+      "id": 48,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"calibração\" de um tacógrafo digital?",
+      "opcoes": [
+        "A limpeza do equipamento",
+        "A atualização ou confirmação dos parâmetros do veículo",
+        "A substituição do cartão",
+        "A impressão de relatórios"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A calibração é a atualização ou confirmação dos parâmetros do veículo (constante k, relação de transmissão, circunferência efetiva dos pneus) através de equipamento de calibração.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea j)"
+    },
+    {
+      "id": 49,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Definições e Componentes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"descarga\" de um tacógrafo digital?",
+      "opcoes": [
+        "A remoção do equipamento",
+        "Copiar ficheiros de dados com assinatura digital",
+        "Apagar todos os dados",
+        "Imprimir relatórios"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A descarga é o processo de copiar ficheiros de dados com assinatura digital do tacógrafo para um suporte externo.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, alínea k)"
+    },
+    {
+      "id": 50,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que distingue o tacógrafo inteligente do tacógrafo digital convencional?",
+      "opcoes": [
+        "Não necessita de calibração",
+        "Liga-se a GNSS para registar automaticamente a posição",
+        "Não utiliza cartões",
+        "Só funciona em veículos novos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo inteligente liga-se a um sistema global de navegação por satélite (GNSS) para registar automaticamente a posição do veículo.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, n.º 2, alínea a)"
+    },
+    {
+      "id": 51,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo inteligente permite comunicação remota com as autoridades?",
+      "opcoes": [
+        "Sim, para controlo na estrada",
+        "Não, apenas armazena dados",
+        "Apenas em caso de acidente",
+        "Apenas com autorização do condutor"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O tacógrafo inteligente suporta comunicação remota com as autoridades de controlo para efeitos de controlo na estrada.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, n.º 2, alínea b)"
+    },
+    {
+      "id": 52,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo inteligente regista a posição do veículo em que momentos?",
+      "opcoes": [
+        "A cada 5 minutos",
+        "Em determinados pontos do período de trabalho diário",
+        "Apenas no início e fim do dia",
+        "Apenas em caso de excesso de velocidade"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo inteligente regista automaticamente a posição do veículo em determinados pontos do período de trabalho diário.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 8.º"
+    },
+    {
+      "id": 53,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Obrigações e Utilização",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo deve ser instalado em que veículos?",
+      "opcoes": [
+        "Apenas em veículos de mais de 12 toneladas",
+        "Em veículos abrangidos pelo Regulamento (CE) n.º 561/2006",
+        "Apenas em veículos de transporte internacional",
+        "Em todos os veículos comerciais"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo deve ser instalado em veículos abrangidos pelo Regulamento (CE) n.º 561/2006.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 3.º"
+    },
+    {
+      "id": 54,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Obrigações e Utilização",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quem é responsável por garantir que o tacógrafo está em conformidade?",
+      "opcoes": [
+        "Apenas o condutor",
+        "A empresa de transportes e o condutor",
+        "Apenas a oficina",
+        "Apenas o fabricante"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A responsabilidade é partilhada entre a empresa de transportes e o condutor.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 4.º"
+    },
+    {
+      "id": 55,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Obrigações e Utilização",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que deve fazer o condutor se o tacógrafo avariar?",
+      "opcoes": [
+        "Continuar a conduzir normalmente",
+        "Registar manualmente as atividades e comunicar à empresa",
+        "Parar imediatamente",
+        "Ignorar até à próxima revisão"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Em caso de avaria, o condutor deve registar manualmente as suas atividades e comunicar a situação à empresa.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 16.º"
+    },
+    {
+      "id": 56,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Obrigações e Utilização",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os dados do tacógrafo podem ser utilizados para fins diferentes do controlo?",
+      "opcoes": [
+        "Sim, sem restrições",
+        "Apenas com condições e requisitos específicos",
+        "Não, nunca",
+        "Apenas com autorização judicial"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os dados podem ser utilizados para outros fins apenas com condições e requisitos específicos previstos no regulamento.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 34.º"
+    },
+    {
+      "id": 57,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Obrigações e Utilização",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo analógico utiliza que tipo de registo?",
+      "opcoes": [
+        "Cartão inteligente",
+        "Folha de registo",
+        "Memória digital",
+        "Disco rígido"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo analógico utiliza folhas de registo em papel.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, n.º 1"
+    },
+    {
+      "id": 58,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Obrigações e Utilização",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo digital utiliza que tipo de registo?",
+      "opcoes": [
+        "Folha de papel",
+        "Cartão tacográfico",
+        "Fita magnética",
+        "Disquete"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo digital utiliza cartões tacográficos para registo de dados.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 2.º, n.º 1, alínea b)"
+    },
+    {
+      "id": 59,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Cartões Tacográficos",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o prazo de validade típico de um cartão de condutor?",
+      "opcoes": [
+        "1 ano",
+        "3 anos",
+        "5 anos",
+        "10 anos"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O cartão de condutor tem um prazo de validade típico de 5 anos.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 7.º"
+    },
+    {
+      "id": 60,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Cartões Tacográficos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O cartão de condutor pode ser emitido em que país?",
+      "opcoes": [
+        "Apenas no país de residência",
+        "Em qualquer Estado-Membro",
+        "Apenas no país de nacionalidade",
+        "Apenas no país de estabelecimento da empresa"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O cartão de condutor pode ser emitido em qualquer Estado-Membro, embora normalmente seja emitido no país de residência.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 6.º"
+    },
+    {
+      "id": 61,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Cartões Tacográficos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor pode ter mais do que um cartão de condutor válido?",
+      "opcoes": [
+        "Sim, em países diferentes",
+        "Não, apenas um cartão válido",
+        "Sim, até três cartões",
+        "Depende do país"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Um condutor só pode ser titular de um cartão de condutor válido.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 6.º"
+    },
+    {
+      "id": 62,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Cartões Tacográficos",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que acontece se o cartão de condutor for danificado?",
+      "opcoes": [
+        "O condutor deve solicitar um novo à autoridade emissora",
+        "Pode continuar a usar o cartão danificado",
+        "A empresa pode emitir um substituto",
+        "O condutor pode conduzir sem cartão"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Em caso de dano, o condutor deve solicitar um novo cartão à autoridade emissora.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 7.º"
+    },
+    {
+      "id": 63,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Cartões Tacográficos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O cartão de empresa é obrigatório para todas as empresas de transporte?",
+      "opcoes": [
+        "Sim, sem exceção",
+        "Apenas para empresas que utilizem veículos com tacógrafo",
+        "Apenas para transporte internacional",
+        "Apenas para empresas com mais de 5 veículos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O cartão de empresa é necessário para empresas que utilizem veículos equipados com tacógrafo.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 7.º"
+    },
+    {
+      "id": 64,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Controlo e Sanções",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quem pode realizar controlos na estrada aos tacógrafos?",
+      "opcoes": [
+        "Apenas a polícia",
+        "Autoridades de controlo designadas pelos Estados-Membros",
+        "Apenas o IMT",
+        "Apenas inspetores de trabalho"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os controlos são realizados pelas autoridades de controlo designadas pelos Estados-Membros.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 38.º"
+    },
+    {
+      "id": 65,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Controlo e Sanções",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O condutor deve poder apresentar os registos de quantos dias em caso de controlo?",
+      "opcoes": [
+        "Apenas o dia atual",
+        "O dia atual e os 28 dias anteriores",
+        "Apenas a semana atual",
+        "Os últimos 3 meses"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O condutor deve poder apresentar os registos do dia atual e dos 28 dias anteriores.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 15.º"
+    },
+    {
+      "id": 66,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Controlo e Sanções",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "As infrações ao Regulamento (CE) n.º 561/2006 devem ser sancionadas de que forma?",
+      "opcoes": [
+        "Apenas com multa",
+        "De forma eficaz, proporcionada, dissuasiva e não discriminatória",
+        "Apenas com advertência",
+        "Apenas com suspensão da licença"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "As sanções devem ser eficazes, proporcionadas, dissuasivas e não discriminatórias.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 19.º"
+    },
+    {
+      "id": 67,
+      "modulo_id": "modulo_2",
+      "modulo": "Tacógrafo",
+      "subcategoria": "Controlo e Sanções",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A empresa de transportes é responsável pelas infrações dos seus condutores?",
+      "opcoes": [
+        "Não, apenas o condutor é responsável",
+        "Sim, a responsabilidade abrange a empresa e o condutor",
+        "Apenas se a empresa tiver conhecimento",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A responsabilidade abrange a empresa e o condutor, conforme o artigo 10.º do Regulamento (CE) n.º 561/2006.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 10.º"
+    },
+    {
+      "id": 68,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Definições",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é \"peso máximo autorizado\"?",
+      "opcoes": [
+        "O peso do veículo vazio",
+        "O peso máximo para utilização em tráfego internacional de um veículo carregado",
+        "O peso máximo por eixo",
+        "O peso da carga"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O peso máximo autorizado é o peso máximo de utilização de um veículo carregado no tráfego internacional.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 2.º"
+    },
+    {
+      "id": 69,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Definições",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é uma \"carga indivisível\"?",
+      "opcoes": [
+        "Uma carga que pode ser dividida em duas partes",
+        "Uma carga que não pode ser subdividida sem custos ou risco de danos exagerados",
+        "Uma carga que pesa mais de 40 toneladas",
+        "Uma carga que ocupa todo o veículo"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Carga indivisível é a carga que, para efeitos de transporte rodoviário, não pode ser dividida em duas ou mais cargas sem custos ou risco de danos desproporcionados.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 2.º"
+    },
+    {
+      "id": 70,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Definições",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um \"veículo de transporte condicionado\"?",
+      "opcoes": [
+        "Um veículo com ar condicionado",
+        "Um veículo com paredes laterais de pelo menos 45 mm de espessura para temperatura controlada",
+        "Um veículo frigorífico",
+        "Um veículo com temperatura ambiente"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Veículo de transporte condicionado é qualquer veículo cuja superstrutura fixa ou móvel esteja especialmente equipada para o transporte de mercadorias a temperatura controlada, com paredes laterais de pelo menos 45 mm de espessura.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 2.º"
+    },
+    {
+      "id": 71,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Definições",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que são \"combustíveis alternativos\" no contexto da Diretiva 96/53/CE?",
+      "opcoes": [
+        "Apenas eletricidade",
+        "Eletricidade, hidrogénio, gás natural, GPL e energia mecânica de armazenamento",
+        "Apenas hidrogénio",
+        "Apenas biocombustíveis"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Combustíveis alternativos incluem eletricidade, hidrogénio, gás natural (GNC/GNL), GPL e energia mecânica de armazenamento a bordo.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 2.º"
+    },
+    {
+      "id": 72,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Definições",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um \"veículo com nível nulo de emissões\"?",
+      "opcoes": [
+        "Um veículo elétrico apenas",
+        "Um veículo pesado com nível nulo de emissões na aceção do Regulamento (UE) 2019/1242",
+        "Um veículo híbrido",
+        "Um veículo a gás natural"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Veículo de emissões nulas é um veículo pesado com nível de emissões nulo na aceção do artigo 3.º, ponto 11, do Regulamento (UE) 2019/1242.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 2.º"
+    },
+    {
+      "id": 73,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Definições",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um \"autocarro articulado\"?",
+      "opcoes": [
+        "Um autocarro com reboque",
+        "Um autocarro com duas partes rígidas ligadas por secção articulada",
+        "Um autocarro de dois andares",
+        "Um autocarro com mais de 15 metros"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Autocarro articulado é um autocarro composto por duas partes rígidas ligadas por uma secção articulada.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 2.º"
+    },
+    {
+      "id": 74,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Limites de Pesos e Dimensões",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a largura máxima autorizada para veículos de transporte de mercadorias?",
+      "opcoes": [
+        "2,30 m",
+        "2,50 m",
+        "2,55 m",
+        "2,60 m"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "A largura máxima autorizada é de 2,55 m.",
+      "referencia_legal": "Diretiva 96/53/CE, Anexo I"
+    },
+    {
+      "id": 75,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Limites de Pesos e Dimensões",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a altura máxima autorizada para veículos pesados?",
+      "opcoes": [
+        "3,5 m",
+        "4,0 m",
+        "4,5 m",
+        "5,0 m"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A altura máxima autorizada é de 4,0 m.",
+      "referencia_legal": "Diretiva 96/53/CE, Anexo I"
+    },
+    {
+      "id": 76,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Limites de Pesos e Dimensões",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O comprimento máximo de um conjunto veículo-reboque com atrelagem rígida é:",
+      "opcoes": [
+        "16,5 m",
+        "18,75 m",
+        "20,0 m",
+        "22,0 m"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O comprimento máximo de um conjunto veículo-reboque com atrelagem rígida é de 18,75 m.",
+      "referencia_legal": "Diretiva 96/53/CE, Anexo I"
+    },
+    {
+      "id": 77,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Limites de Pesos e Dimensões",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o peso máximo autorizado para um conjunto de 5 ou 6 eixos?",
+      "opcoes": [
+        "36 toneladas",
+        "40 toneladas",
+        "44 toneladas",
+        "48 toneladas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O peso máximo autorizado para um conjunto de 5 ou 6 eixos é de 40 toneladas.",
+      "referencia_legal": "Diretiva 96/53/CE, Anexo I"
+    },
+    {
+      "id": 78,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Limites de Pesos e Dimensões",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A largura máxima de 2,55 m aplica-se também aos autocarros?",
+      "opcoes": [
+        "Sim, a norma foi extensiva aos autocarros",
+        "Não, apenas a veículos de mercadorias",
+        "Apenas em transporte internacional",
+        "Apenas a autocarros articulados"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A norma de 2,55 m foi extensiva aos autocarros, conforme alteração à Diretiva 96/53/CE.",
+      "referencia_legal": "Diretiva 96/53/CE, Anexo I"
+    },
+    {
+      "id": 79,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Transporte Intermodal",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a distância máxima do troço rodoviário inicial ou final no transporte intermodal?",
+      "opcoes": [
+        "50 km",
+        "100 km",
+        "150 km",
+        "200 km"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "No transporte intermodal, o troço rodoviário inicial ou final não pode exceder 150 km no território da União.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 1.º"
+    },
+    {
+      "id": 80,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Transporte Intermodal",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "As operações de transporte intermodal aplicam-se a contentores de que comprimento máximo?",
+      "opcoes": [
+        "20 pés",
+        "40 pés",
+        "45 pés",
+        "53 pés"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "As operações de transporte intermodal aplicam-se a contentores de 45 pés.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 1.º"
+    },
+    {
+      "id": 81,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Transporte Intermodal",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "No transporte intermodal, o troço rodoviário pode ser efetuado no território da União?",
+      "opcoes": [
+        "Sim, sem limites",
+        "Apenas se não exceder 150 km",
+        "Apenas se for o troço inicial",
+        "Apenas se for o troço final"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O troço rodoviário no território da União não pode exceder 150 km.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 1.º"
+    },
+    {
+      "id": 82,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Veículos de Combustíveis Alternativos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os veículos alimentados por combustíveis alternativos podem beneficiar de peso adicional?",
+      "opcoes": [
+        "Sim, para compensar o peso das baterias ou tanques",
+        "Não, o peso máximo é igual",
+        "Apenas veículos elétricos",
+        "Apenas veículos a hidrogénio"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Os veículos alimentados por combustíveis alternativos podem beneficiar de peso adicional para compensar o peso das baterias ou tanques.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 10.º-B"
+    },
+    {
+      "id": 83,
+      "modulo_id": "modulo_3",
+      "modulo": "Pesos e Dimensões",
+      "subcategoria": "Veículos de Combustíveis Alternativos",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "O peso adicional para veículos de zero emissões é aplicável em que tipo de operações?",
+      "opcoes": [
+        "Apenas transporte nacional",
+        "Apenas transporte internacional",
+        "Todas as operações abrangidas pela diretiva",
+        "Apenas transporte intermodal"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O peso adicional aplica-se a todas as operações abrangidas pela diretiva.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 10.º-B"
+    },
+    {
+      "id": 84,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quais são os quatro requisitos para exercer a atividade de transportador rodoviário?",
+      "opcoes": [
+        "Idade, licença, veículo, seguro",
+        "Estabelecimento efetivo e estável, idoneidade, capacidade financeira, capacidade profissional",
+        "Nacionalidade, residência, capital, formação",
+        "Licença, tacógrafo, seguro, certificado"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os quatro requisitos são: estabelecimento efetivo e estável, idoneidade, capacidade financeira adequada e capacidade profissional.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 3.º"
+    },
+    {
+      "id": 85,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é o \"gestor de transportes\"?",
+      "opcoes": [
+        "O motorista principal",
+        "Uma pessoa singular que dirige efetiva e permanentemente a atividade de transportes",
+        "O proprietário do veículo",
+        "O responsável pela manutenção"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O gestor de transportes é uma pessoa singular que dirige efetiva e permanentemente a atividade de transportes da empresa.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 4.º"
+    },
+    {
+      "id": 86,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O gestor de transportes deve residir onde?",
+      "opcoes": [
+        "Em qualquer país",
+        "Num Estado-Membro",
+        "Apenas no país de nacionalidade",
+        "Apenas no país da sede"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O gestor de transportes deve residir num Estado-Membro.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 4.º"
+    },
+    {
+      "id": 87,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A capacidade financeira adequada refere-se a quê?",
+      "opcoes": [
+        "Ao capital social da empresa",
+        "Aos recursos financeiros mínimos para o funcionamento normal",
+        "Ao valor dos veículos",
+        "Ao seguro de responsabilidade civil"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A capacidade financeira adequada refere-se aos recursos financeiros mínimos para garantir o arranque e a boa gestão da empresa.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 7.º"
+    },
+    {
+      "id": 88,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A idoneidade é afetada por quê?",
+      "opcoes": [
+        "Apenas por condenações penais",
+        "Por condenações penais graves ou sanções por infrações graves à regulamentação comunitária",
+        "Apenas por infrações de trânsito",
+        "Apenas por dívidas fiscais"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A idoneidade é afetada por condenações penais graves ou sanções por infrações graves à regulamentação comunitária relativa ao transporte rodoviário.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 6.º"
+    },
+    {
+      "id": 89,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A competência profissional é comprovada através de quê?",
+      "opcoes": [
+        "Apenas experiência profissional",
+        "Exame",
+        "Apenas formação académica",
+        "Apenas certificado de formação"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A competência profissional é comprovada através de exame.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 8.º"
+    },
+    {
+      "id": 90,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Requisitos Fundamentais",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"autorização de exercício da atividade de transportador rodoviário\"?",
+      "opcoes": [
+        "Uma licença de condução",
+        "Uma decisão administrativa que autoriza a empresa a exercer a atividade",
+        "Um certificado de formação",
+        "Um seguro obrigatório"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A autorização é uma decisão administrativa que autoriza a empresa a exercer a atividade de transportador rodoviário.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 3.º"
+    },
+    {
+      "id": 91,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Gestor de Transportes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o período mínimo de inabilitação do gestor de transportes que perdeu a idoneidade?",
+      "opcoes": [
+        "6 meses",
+        "1 ano",
+        "2 anos",
+        "5 anos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O período mínimo de inabilitação é de 1 ano.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 6.º"
+    },
+    {
+      "id": 92,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Gestor de Transportes",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "O gestor de transportes inabilitado pode voltar a exercer se demonstrar que recebeu formação de quantos meses?",
+      "opcoes": [
+        "1 mês",
+        "2 meses",
+        "3 meses",
+        "6 meses"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O gestor de transportes deve demonstrar que recebeu formação adequada de pelo menos 3 meses ou passou em exame.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 6.º"
+    },
+    {
+      "id": 93,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Gestor de Transportes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que acontece se a empresa deixar de cumprir um requisito?",
+      "opcoes": [
+        "A autorização é retirada imediatamente",
+        "A autoridade concede um prazo (até 6 meses) para regularização",
+        "A empresa é multada",
+        "A empresa pode continuar indefinidamente"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A autoridade competente pode conceder um prazo não superior a 6 meses para regularização.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 13.º"
+    },
+    {
+      "id": 94,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Gestor de Transportes",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Se a empresa não regularizar dentro do prazo, o que acontece?",
+      "opcoes": [
+        "A autorização é suspensa ou retirada",
+        "A empresa recebe uma extensão",
+        "Apenas uma multa",
+        "Nada"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A autorização é suspensa ou retirada se a empresa não regularizar dentro do prazo.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 13.º"
+    },
+    {
+      "id": 95,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Âmbito de Aplicação e Exceções",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Regulamento (CE) n.º 1071/2009 aplica-se a empresas que efetuam exclusivamente transportes nacionais com veículos até 3,5 toneladas?",
+      "opcoes": [
+        "Sim, sem exceção",
+        "Não, estão excluídas",
+        "Apenas se for transporte internacional",
+        "Apenas se tiverem mais de 5 veículos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "As empresas que efetuam exclusivamente transportes nacionais com veículos até 3,5 toneladas estão excluídas.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 1.º"
+    },
+    {
+      "id": 96,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Âmbito de Aplicação e Exceções",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Regulamento (CE) n.º 1071/2009 aplica-se a empresas com veículos até 2,5 toneladas?",
+      "opcoes": [
+        "Sim",
+        "Não, estão excluídas",
+        "Apenas em transporte internacional",
+        "Depende do país"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "As empresas com veículos até 2,5 toneladas estão excluídas.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 1.º"
+    },
+    {
+      "id": 97,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Âmbito de Aplicação e Exceções",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "As empresas que efetuam exclusivamente serviços de transporte de passageiros com fins não comerciais estão abrangidas?",
+      "opcoes": [
+        "Sim",
+        "Não",
+        "Apenas se tiverem mais de 10 veículos",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "As empresas que efetuam exclusivamente serviços de transporte de passageiros com fins não comerciais estão excluídas.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 1.º"
+    },
+    {
+      "id": 98,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Âmbito de Aplicação e Exceções",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é \"transporte por conta própria\"?",
+      "opcoes": [
+        "Transporte realizado por empresa licenciada",
+        "Transporte exercido como atividade acessória para satisfazer necessidades próprias",
+        "Transporte de mercadorias de terceiros",
+        "Transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Transporte por conta própria é o transporte exercido como atividade acessória para satisfazer necessidades próprias.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 1.º"
+    },
+    {
+      "id": 99,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Âmbito de Aplicação e Exceções",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta própria está sujeito a licenciamento?",
+      "opcoes": [
+        "Sim, como o transporte por conta de outrem",
+        "Não, está liberalizado",
+        "Apenas para veículos de mais de 3,5 toneladas",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O transporte por conta própria está liberalizado, não estando sujeito a licenciamento.",
+      "referencia_legal": "Regulamento (CE) n.º 1071/2009, artigo 1.º"
+    },
+    {
+      "id": 100,
+      "modulo_id": "modulo_4",
+      "modulo": "Acesso à Atividade",
+      "subcategoria": "Âmbito de Aplicação e Exceções",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Uma empresa que efetue transporte por conta de outrem sem licença está sujeita a que sanção?",
+      "opcoes": [
+        "Apenas advertência",
+        "Multa de 1.250€ a 3.740€ (pessoa singular) ou 5.000€ a 15.000€ (pessoa coletiva)",
+        "Suspensão imediata",
+        "Nenhuma sanção"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A multa varia entre 1.250€ e 3.740€ para pessoa singular e entre 5.000€ e 15.000€ para pessoa coletiva.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 101,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Licença Comunitária",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"licença comunitária\"?",
+      "opcoes": [
+        "Uma licença de condução europeia",
+        "Uma autorização para transporte internacional rodoviário",
+        "Um certificado de formação",
+        "Um seguro europeu"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A licença comunitária é uma autorização para transporte internacional rodoviário.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 4.º"
+    },
+    {
+      "id": 102,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Licença Comunitária",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quem emite a licença comunitária?",
+      "opcoes": [
+        "A Comissão Europeia",
+        "O Estado-Membro de estabelecimento",
+        "O país de destino",
+        "A empresa"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A licença comunitária é emitida pelo Estado-Membro de estabelecimento.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 4.º"
+    },
+    {
+      "id": 103,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Licença Comunitária",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transportador deve conservar a cópia certificada da licença comunitária a bordo do veículo?",
+      "opcoes": [
+        "Sim, para controlo",
+        "Não, apenas a original no escritório",
+        "Apenas em transporte nacional",
+        "Apenas em cabotagem"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O transportador deve conservar uma cópia certificada da licença comunitária a bordo do veículo para efeitos de controlo.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 4.º"
+    },
+    {
+      "id": 104,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Licença Comunitária",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um \"certificado de motorista\"?",
+      "opcoes": [
+        "A carta de condução",
+        "Um certificado para motoristas nacionais de países terceiros",
+        "O CAM",
+        "Um certificado de formação"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O certificado de motorista é um documento emitido por um Estado-Membro para motoristas nacionais de países terceiros empregados por uma empresa estabelecida nesse Estado-Membro.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 5.º"
+    },
+    {
+      "id": 105,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Cabotagem",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é a \"cabotagem\"?",
+      "opcoes": [
+        "Transporte entre dois países da UE",
+        "Transporte nacional realizado por transportador não residente",
+        "Transporte de mercadorias perigosas",
+        "Transporte de passageiros"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Cabotagem é o transporte nacional realizado por um transportador não residente no Estado-Membro de acolhimento.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 8.º"
+    },
+    {
+      "id": 106,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Cabotagem",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A cabotagem é permitida a título:",
+      "opcoes": [
+        "Permanente",
+        "Temporário",
+        "Indefinido",
+        "Apenas em emergências"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A cabotagem é permitida a título temporário.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 8.º"
+    },
+    {
+      "id": 107,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Cabotagem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transportador em cabotagem deve ter sede ou estabelecimento no Estado-Membro de acolhimento?",
+      "opcoes": [
+        "Sim, obrigatoriamente",
+        "Não, pode operar temporariamente sem sede",
+        "Apenas se for mais de 3 meses",
+        "Apenas para transporte de passageiros"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O transportador pode efetuar temporariamente serviços de cabotagem sem dispor de sede ou outro estabelecimento no Estado-Membro de acolhimento.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 8.º"
+    },
+    {
+      "id": 108,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Cabotagem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O regime transitório de cabotagem vigora até quando?",
+      "opcoes": [
+        "Até 2025",
+        "Até à harmonização do mercado dos transportes rodoviários",
+        "Até 2030",
+        "Indefinidamente"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O regime transitório de cabotagem vigora até que a harmonização do mercado dos transportes rodoviários de mercadorias esteja concluída.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 8.º"
+    },
+    {
+      "id": 109,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Definições",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é o \"Estado-Membro de acolhimento\"?",
+      "opcoes": [
+        "O país de origem",
+        "O Estado-Membro onde o transportador opera mas não está estabelecido",
+        "O país de destino",
+        "O país de trânsito"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Estado-Membro de acolhimento é o Estado-Membro onde o transportador opera mas não está estabelecido.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 2.º"
+    },
+    {
+      "id": 110,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Definições",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um \"transportador não residente\"?",
+      "opcoes": [
+        "Um transportador sem licença",
+        "Uma empresa que opera num Estado-Membro de acolhimento",
+        "Um transportador de país terceiro",
+        "Um transportador sem veículos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Transportador não residente é uma empresa que opera num Estado-Membro de acolhimento sem aí estar estabelecida.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 2.º"
+    },
+    {
+      "id": 111,
+      "modulo_id": "modulo_5",
+      "modulo": "Acesso ao Mercado e Cabotagem",
+      "subcategoria": "Definições",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é uma \"infracção grave à legislação comunitária no domínio do transporte rodoviário\"?",
+      "opcoes": [
+        "Qualquer infração de trânsito",
+        "Uma infração que pode acarretar perda de idoneidade ou retirada da licença",
+        "Apenas excesso de velocidade",
+        "Apenas falta de tacógrafo"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Infracção grave é aquela que pode acarretar a perda de idoneidade ou a retirada da licença, conforme anexo do regulamento.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 2.º"
+    },
+    {
+      "id": 112,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Certificado de Aptidão para Motorista",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é o CAM?",
+      "opcoes": [
+        "Certificado de Aptidão para Motorista",
+        "Cartão de Autorização de Mercadorias",
+        "Certificado de Acesso ao Mercado",
+        "Cartão de Atividade de Motorista"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "CAM significa Certificado de Aptidão para Motorista.",
+      "referencia_legal": "Diretiva (UE) 2022/2561"
+    },
+    {
+      "id": 113,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Certificado de Aptidão para Motorista",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a validade do CAM em Portugal?",
+      "opcoes": [
+        "3 anos",
+        "5 anos",
+        "10 anos",
+        "Indefinida"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O CAM tem uma validade de 5 anos em Portugal.",
+      "referencia_legal": "Diretiva (UE) 2022/2561"
+    },
+    {
+      "id": 114,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Certificado de Aptidão para Motorista",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quem emite o CAM em Portugal?",
+      "opcoes": [
+        "A PSP",
+        "O IMT",
+        "A ACT",
+        "O Ministério da Educação"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O CAM é emitido pelo Instituto da Mobilidade e dos Transportes (IMT).",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 115,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Certificado de Aptidão para Motorista",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Diretiva (UE) 2022/2561 estabelece normas para quê?",
+      "opcoes": [
+        "Pesos e dimensões",
+        "Qualificação inicial e formação contínua",
+        "Tempos de condução",
+        "Tacógrafo"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Diretiva (UE) 2022/2561 estabelece as normas mínimas de qualificação inicial e formação contínua para motoristas de veículos pesados.",
+      "referencia_legal": "Diretiva (UE) 2022/2561"
+    },
+    {
+      "id": 116,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Certificado de Aptidão para Motorista",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A formação contínua é obrigatória para manter o CAM válido?",
+      "opcoes": [
+        "Sim, a cada 5 anos",
+        "Não, apenas a formação inicial",
+        "Apenas para motoristas de passageiros",
+        "Apenas para transporte internacional"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A formação contínua é obrigatória a cada 5 anos para manter o CAM válido.",
+      "referencia_legal": "Diretiva (UE) 2022/2561"
+    },
+    {
+      "id": 117,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Certificado de Aptidão para Motorista",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O CAM é obrigatório para todos os motoristas de veículos pesados?",
+      "opcoes": [
+        "Sim, sem exceção",
+        "Sim, com exceções específicas previstas na lei",
+        "Não",
+        "Apenas para transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O CAM é obrigatório, com exceções específicas previstas na lei.",
+      "referencia_legal": "Diretiva (UE) 2022/2561"
+    },
+    {
+      "id": 118,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Cartas de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é a idade mínima para tirar a carta de pesados de Categoria C em Portugal?",
+      "opcoes": [
+        "18 anos",
+        "20 anos",
+        "21 anos",
+        "24 anos"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A idade mínima para a Categoria C é 18 anos.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 119,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Cartas de Condução",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A partir de que idade não há restrições para conduzir todas as categorias de pesados em Portugal?",
+      "opcoes": [
+        "18 anos",
+        "21 anos",
+        "24 anos",
+        "25 anos"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "A partir dos 24 anos não há restrições para conduzir todas as categorias de pesados.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 120,
+      "modulo_id": "modulo_6",
+      "modulo": "Formação e CAM",
+      "subcategoria": "Cartas de Condução",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Categoria C1 habilita a conduzir veículos de mercadorias até que peso?",
+      "opcoes": [
+        "3.500 kg",
+        "7.500 kg",
+        "12.000 kg",
+        "40.000 kg"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Categoria C1 habilita a conduzir veículos de mercadorias até 7.500 kg.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 121,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor português realiza transporte internacional para Espanha. Que documentos deve ter a bordo?",
+      "opcoes": [
+        "Apenas carta de condução",
+        "Licença Comunitária, CAM, cartão de motorista, carta de condução, documentos do veículo",
+        "Apenas CAM",
+        "Apenas licença comunitária"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Deve ter a bordo a Licença Comunitária, o CAM, o cartão de motorista, a carta de condução e os documentos do veículo.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009 e legislação nacional"
+    },
+    {
+      "id": 122,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduz 4,5 horas, faz pausa de 15 minutos, conduz 1 hora, faz pausa de 30 minutos. Cumpriu as regras?",
+      "opcoes": [
+        "Sim, a pausa de 45 minutos foi cumprida",
+        "Não, a segunda pausa devia ser de 30 minutos",
+        "Não, a primeira pausa devia ser de 30 minutos",
+        "Não, devia ter feito pausa única de 45 minutos"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A pausa de 45 minutos pode ser dividida em 15 + 30 minutos, desde que a segunda pausa seja de pelo menos 30 minutos.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 7.º"
+    },
+    {
+      "id": 123,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Uma empresa de transporte pretende realizar cabotagem em França. Que condições deve cumprir?",
+      "opcoes": [
+        "Nenhuma condição especial",
+        "Licença Comunitária, transporte temporário, sem sede em França",
+        "Apenas licença comunitária",
+        "Apenas CAM"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Deve possuir Licença Comunitária, o transporte deve ser temporário e não pode ter sede ou estabelecimento em França.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009, artigo 8.º"
+    },
+    {
+      "id": 124,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor conduz 10 horas na segunda-feira e 10 horas na terça-feira. Quantas horas pode conduzir na quarta-feira?",
+      "opcoes": [
+        "10 horas",
+        "9 horas",
+        "11 horas",
+        "12 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Já usou as duas extensões semanais, pelo que na quarta-feira só pode conduzir 9 horas.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 6.º"
+    },
+    {
+      "id": 125,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um condutor terminou o repouso semanal às 08:00 de segunda-feira. Até quando deve iniciar o próximo repouso semanal?",
+      "opcoes": [
+        "08:00 de domingo",
+        "08:00 de sábado",
+        "08:00 de segunda-feira",
+        "24:00 de domingo"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O período de repouso semanal deve começar o mais tardar no fim de seis períodos de 24 horas após o repouso semanal anterior, ou seja, até às 08:00 de domingo.",
+      "referencia_legal": "Regulamento (CE) n.º 561/2006, artigo 8.º, n.º 6"
+    },
+    {
+      "id": 126,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um veículo tem 3 eixos e reboca um semi-reboque de 2 eixos. Qual é o peso máximo autorizado?",
+      "opcoes": [
+        "36 toneladas",
+        "40 toneladas",
+        "44 toneladas",
+        "48 toneladas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O peso máximo autorizado para um conjunto de 5 eixos é de 40 toneladas.",
+      "referencia_legal": "Diretiva 96/53/CE, Anexo I"
+    },
+    {
+      "id": 127,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que acontece se um tacógrafo avariar durante a condução?",
+      "opcoes": [
+        "O condutor continua normalmente",
+        "O condutor regista manualmente e comunica à empresa",
+        "O condutor para imediatamente",
+        "O condutor ignora até à oficina"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Em caso de avaria, o condutor deve registar manualmente as atividades e comunicar à empresa.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014, artigo 16.º"
+    },
+    {
+      "id": 128,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Uma empresa de transporte por conta de outrem sem licença está sujeita a que multa (pessoa coletiva)?",
+      "opcoes": [
+        "500€ a 1.000€",
+        "1.250€ a 3.740€",
+        "5.000€ a 15.000€",
+        "20.000€ a 50.000€"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "A multa para pessoa coletiva é de 5.000€ a 15.000€.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 129,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta própria está sujeito a licenciamento?",
+      "opcoes": [
+        "Sim, como o transporte por conta de outrem",
+        "Não, está liberalizado",
+        "Apenas para veículos de mais de 3,5 toneladas",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O transporte por conta própria está liberalizado.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 130,
+      "modulo_id": "modulo_7",
+      "modulo": "Cenários Práticos Integrados",
+      "subcategoria": "Cenários",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Qual é o documento que titula o transporte por conta de outrem em Portugal?",
+      "opcoes": [
+        "Alvará ou Licença Comunitária",
+        "Carta de condução",
+        "CAM",
+        "Certificado de formação"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O transporte por conta de outrem é titulado por Alvará ou Licença Comunitária.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 131,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em Portugal, o transporte por conta de outrem com veículos de peso bruto igual ou superior a 2.500 kg é licenciado por quem?",
+      "opcoes": [
+        "A Câmara Municipal",
+        "O IMT, I.P.",
+        "A PSP",
+        "O Ministério da Economia"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O licenciamento é da responsabilidade do IMT, I.P.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 132,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta Própria",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em Portugal, o transporte por conta própria com veículos de peso bruto inferior a 2.500 kg necessita de licenciamento?",
+      "opcoes": [
+        "Sim",
+        "Não",
+        "Apenas se for internacional",
+        "Apenas se transportar mercadorias perigosas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O transporte por conta própria com veículos de peso bruto inferior a 2.500 kg não necessita de licenciamento.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 133,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Decreto-Lei n.º 257/2007 regula o quê em Portugal?",
+      "opcoes": [
+        "Tempos de condução",
+        "Acesso à atividade e ao mercado dos transportes rodoviários de mercadorias",
+        "Tacógrafo",
+        "Pesos e dimensões"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O Decreto-Lei n.º 257/2007 regula o acesso à atividade e ao mercado dos transportes rodoviários de mercadorias.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 134,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em caso de excesso de carga num transporte de carga completa, a responsabilidade é imputável a quem?",
+      "opcoes": [
+        "Apenas ao transportador",
+        "Apenas ao expedidor",
+        "Ao expedidor e ao transportador em comparticipação, salvo exceções",
+        "Apenas ao condutor"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "A responsabilidade é imputável ao expedidor e ao transportador em comparticipação, salvo exceções previstas na lei.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 135,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Decreto-Lei n.º 60/2016 regula o quê?",
+      "opcoes": [
+        "Transporte de mercadorias perigosas",
+        "Transporte de passageiros flexível",
+        "Tacógrafo",
+        "Pesos e dimensões"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O Decreto-Lei n.º 60/2016 regula o transporte de passageiros flexível.",
+      "referencia_legal": "Decreto-Lei n.º 60/2016"
+    },
+    {
+      "id": 136,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Diretiva 2002/15/CE regula o quê?",
+      "opcoes": [
+        "Tempos de condução",
+        "Organização do tempo de trabalho das pessoas que exercem atividades móveis de transporte rodoviário",
+        "Tacógrafo",
+        "Pesos e dimensões"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Diretiva 2002/15/CE regula a organização do tempo de trabalho das pessoas que exercem atividades móveis de transporte rodoviário.",
+      "referencia_legal": "Diretiva 2002/15/CE"
+    },
+    {
+      "id": 137,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em Portugal, quem transpoz a Diretiva 2002/15/CE para a ordem jurídica interna?",
+      "opcoes": [
+        "Decreto-Lei n.º 237/2007",
+        "Decreto-Lei n.º 257/2007",
+        "Decreto-Lei n.º 60/2016",
+        "Decreto-Lei n.º 41-A/2010"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O Decreto-Lei n.º 237/2007 transpôs a Diretiva 2002/15/CE.",
+      "referencia_legal": "Decreto-Lei n.º 237/2007"
+    },
+    {
+      "id": 138,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O exame de capacidade profissional para transportes rodoviários em Portugal tem que duração?",
+      "opcoes": [
+        "2 horas",
+        "3 horas",
+        "4 horas",
+        "5 horas"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O exame de capacidade profissional tem a duração de 4 horas.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 139,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O certificado de capacidade profissional emitido pelo IMTT é válido por quanto tempo?",
+      "opcoes": [
+        "3 anos",
+        "5 anos",
+        "10 anos",
+        "Indefinidamente"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O certificado de capacidade profissional é válido por 5 anos.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 140,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A renovação do certificado de capacidade profissional em Portugal exige novo exame?",
+      "opcoes": [
+        "Sim, sempre",
+        "Não, desde que o titular tenha exercido com boas práticas",
+        "Apenas se tiver mais de 60 anos",
+        "Apenas se tiver mais de 5 veículos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A renovação não exige novo exame, desde que o titular tenha exercido com boas práticas.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 141,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Mercadorias Perigosas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O Decreto-Lei n.º 41-A/2010 regula o quê em Portugal?",
+      "opcoes": [
+        "Transporte de mercadorias perigosas",
+        "Transporte de passageiros",
+        "Tacógrafo",
+        "Pesos e dimensões"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O Decreto-Lei n.º 41-A/2010 regula o transporte de mercadorias perigosas.",
+      "referencia_legal": "Decreto-Lei n.º 41-A/2010"
+    },
+    {
+      "id": 142,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Restrições à Circulação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A restrição à circulação rodoviária em Portugal é regulada por que diploma?",
+      "opcoes": [
+        "Portaria n.º 331-B/98",
+        "Decreto-Lei n.º 257/2007",
+        "Decreto-Lei n.º 60/2016",
+        "Decreto-Lei n.º 41-A/2010"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "A Portaria n.º 331-B/98 regula a restrição à circulação rodoviária.",
+      "referencia_legal": "Portaria n.º 331-B/98"
+    },
+    {
+      "id": 143,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Mercadorias Perigosas",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte de mercadorias perigosas em Portugal exige que formação específica?",
+      "opcoes": [
+        "Sim, conselheiros de segurança e condutores",
+        "Não",
+        "Apenas para o CAM",
+        "Apenas para transporte internacional"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Exige formação específica para conselheiros de segurança e condutores.",
+      "referencia_legal": "Decreto-Lei n.º 41-A/2010"
+    },
+    {
+      "id": 144,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Em Portugal, o transporte de passageiros flexível foi introduzido por que diploma?",
+      "opcoes": [
+        "Decreto-Lei n.º 60/2016",
+        "Decreto-Lei n.º 257/2007",
+        "Decreto-Lei n.º 41-A/2010",
+        "Portaria n.º 331-B/98"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "O Decreto-Lei n.º 60/2016 introduziu o transporte de passageiros flexível.",
+      "referencia_legal": "Decreto-Lei n.º 60/2016"
+    },
+    {
+      "id": 145,
+      "modulo_id": "modulo_8",
+      "modulo": "Legislação Nacional Portuguesa",
+      "subcategoria": "Transporte por Conta de Outrem",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte público ocasional rodoviário de mercadorias em Portugal é exercido por:",
+      "opcoes": [
+        "Qualquer pessoa singular",
+        "Empresas, cooperativas, associações ou fundações com fins comerciais licenciadas pelo IMT",
+        "Apenas sociedades comerciais",
+        "Apenas transportadores individuais"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O transporte público ocasional rodoviário de mercadorias é exercido por empresas, cooperativas, associações ou fundações com fins comerciais licenciadas pelo IMT.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 146,
+      "modulo_id": "modulo_9",
+      "modulo": "AETR",
+      "subcategoria": "Âmbito e Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que significa AETR?",
+      "opcoes": [
+        "Acordo Europeu relativo ao Trabalho das Tripulações de Veículos que efetuam Transportes Internacionais Rodoviários",
+        "Acordo Europeu de Transporte Rodoviário",
+        "Associação Europeia de Transportadores Rodoviários",
+        "Autoridade Europeia de Transporte Rodoviário"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "AETR significa Acordo Europeu relativo ao Trabalho das Tripulações de Veículos que efetuam Transportes Internacionais Rodoviários.",
+      "referencia_legal": "AETR"
+    },
+    {
+      "id": 147,
+      "modulo_id": "modulo_9",
+      "modulo": "AETR",
+      "subcategoria": "Âmbito e Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Portugal é parte do AETR?",
+      "opcoes": [
+        "Sim, desde 1973",
+        "Não",
+        "Apenas desde 2000",
+        "Apenas como observador"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Portugal é parte do AETR desde 1973.",
+      "referencia_legal": "AETR"
+    },
+    {
+      "id": 148,
+      "modulo_id": "modulo_9",
+      "modulo": "AETR",
+      "subcategoria": "Âmbito e Aplicação",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Quantas partes tem o AETR atualmente?",
+      "opcoes": [
+        "27",
+        "40",
+        "53",
+        "60"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O AETR tem atualmente 53 partes.",
+      "referencia_legal": "AETR"
+    },
+    {
+      "id": 149,
+      "modulo_id": "modulo_9",
+      "modulo": "AETR",
+      "subcategoria": "Âmbito e Aplicação",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O AETR aplica-se em substituição do Regulamento (CE) n.º 561/2006 em que situações?",
+      "opcoes": [
+        "Transportes exclusivamente na UE",
+        "Transportes internacionais efetuados em parte fora da UE, Suíça e EEE",
+        "Transportes nacionais",
+        "Transportes de mercadorias perigosas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O AETR aplica-se em transportes internacionais efetuados em parte fora da UE, Suíça e EEE.",
+      "referencia_legal": "AETR, artigo 1.º"
+    },
+    {
+      "id": 150,
+      "modulo_id": "modulo_9",
+      "modulo": "AETR",
+      "subcategoria": "Âmbito e Aplicação",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "Que países são signatários do AETR?",
+      "opcoes": [
+        "Apenas países da UE",
+        "Países europeus, incluindo alguns fora da UE",
+        "Todos os países do mundo",
+        "Apenas países da EFTA"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "São signatários do AETR países europeus, incluindo alguns fora da UE.",
+      "referencia_legal": "AETR"
+    },
+    {
+      "id": 151,
+      "modulo_id": "modulo_10",
+      "modulo": "Tacógrafo Inteligente e Inovações",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo inteligente está previsto em que regulamento?",
+      "opcoes": [
+        "Regulamento (CE) n.º 561/2006",
+        "Regulamento (UE) n.º 165/2014",
+        "Diretiva 96/53/CE",
+        "Regulamento (CE) n.º 1071/2009"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo inteligente está previsto no Regulamento (UE) n.º 165/2014.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014"
+    },
+    {
+      "id": 152,
+      "modulo_id": "modulo_10",
+      "modulo": "Tacógrafo Inteligente e Inovações",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo inteligente regista a posição do veículo através de que sistema?",
+      "opcoes": [
+        "GPS simples",
+        "GNSS (Sistema Global de Navegação por Satélite)",
+        "GSM",
+        "Wi-Fi"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo inteligente utiliza GNSS para registar a posição do veículo.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014"
+    },
+    {
+      "id": 153,
+      "modulo_id": "modulo_10",
+      "modulo": "Tacógrafo Inteligente e Inovações",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A comunicação remota do tacógrafo inteligente serve para quê?",
+      "opcoes": [
+        "Entretenimento do condutor",
+        "Controlo na estrada pelas autoridades",
+        "Comunicação com a empresa",
+        "Navegação"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A comunicação remota serve para controlo na estrada pelas autoridades.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014"
+    },
+    {
+      "id": 154,
+      "modulo_id": "modulo_10",
+      "modulo": "Tacógrafo Inteligente e Inovações",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O tacógrafo inteligente substituiu completamente o tacógrafo digital?",
+      "opcoes": [
+        "Sim, desde 2020",
+        "Não, coexistem durante um período de transição",
+        "Apenas em veículos novos",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo inteligente e o digital coexistem durante um período de transição.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014"
+    },
+    {
+      "id": 155,
+      "modulo_id": "modulo_10",
+      "modulo": "Tacógrafo Inteligente e Inovações",
+      "subcategoria": "Tacógrafo Inteligente",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Que dados adicionais o tacógrafo inteligente regista em comparação com o digital?",
+      "opcoes": [
+        "Consumo de combustível",
+        "Posição do veículo em determinados pontos",
+        "Temperatura do motor",
+        "Pressão dos pneus"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O tacógrafo inteligente regista a posição do veículo em determinados pontos.",
+      "referencia_legal": "Regulamento (UE) n.º 165/2014"
+    },
+    {
+      "id": 156,
+      "modulo_id": "modulo_11",
+      "modulo": "Combustíveis Alternativos e Emissões",
+      "subcategoria": "Combustíveis Alternativos",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que são \"combustíveis alternativos\" na Diretiva 96/53/CE?",
+      "opcoes": [
+        "Apenas gasóleo",
+        "Eletricidade, hidrogénio, gás natural, GPL e energia mecânica de armazenamento",
+        "Apenas gasolina",
+        "Apenas biocombustíveis"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Combustíveis alternativos incluem eletricidade, hidrogénio, gás natural, GPL e energia mecânica de armazenamento.",
+      "referencia_legal": "Diretiva 96/53/CE"
+    },
+    {
+      "id": 157,
+      "modulo_id": "modulo_11",
+      "modulo": "Combustíveis Alternativos e Emissões",
+      "subcategoria": "Combustíveis Alternativos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os veículos de zero emissões podem beneficiar de peso adicional?",
+      "opcoes": [
+        "Sim, para compensar o peso das baterias",
+        "Não",
+        "Apenas veículos elétricos",
+        "Apenas veículos a hidrogénio"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Sim, para compensar o peso das baterias.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 10.º-B"
+    },
+    {
+      "id": 158,
+      "modulo_id": "modulo_11",
+      "modulo": "Combustíveis Alternativos e Emissões",
+      "subcategoria": "Combustíveis Alternativos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O peso adicional para veículos de zero emissões aplica-se em que operações?",
+      "opcoes": [
+        "Apenas transporte nacional",
+        "Todas as operações abrangidas pela diretiva",
+        "Apenas transporte internacional",
+        "Apenas transporte intermodal"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Aplica-se a todas as operações abrangidas pela diretiva.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 10.º-B"
+    },
+    {
+      "id": 159,
+      "modulo_id": "modulo_11",
+      "modulo": "Combustíveis Alternativos e Emissões",
+      "subcategoria": "Combustíveis Alternativos",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O que é um \"veículo alimentado por combustíveis alternativos\"?",
+      "opcoes": [
+        "Um veículo a gasóleo",
+        "Um veículo total ou parcialmente movido por combustível alternativo",
+        "Um veículo híbrido apenas",
+        "Um veículo elétrico apenas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "É um veículo total ou parcialmente movido por combustível alternativo.",
+      "referencia_legal": "Diretiva 96/53/CE"
+    },
+    {
+      "id": 160,
+      "modulo_id": "modulo_11",
+      "modulo": "Combustíveis Alternativos e Emissões",
+      "subcategoria": "Combustíveis Alternativos",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Diretiva 96/53/CE prevê peso adicional para veículos de zero emissões para quê?",
+      "opcoes": [
+        "Aumentar a carga",
+        "Compensar o peso das tecnologias de zero emissões",
+        "Melhorar a aerodinâmica",
+        "Aumentar a velocidade"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O peso adicional serve para compensar o peso das tecnologias de zero emissões.",
+      "referencia_legal": "Diretiva 96/53/CE, artigo 10.º-B"
+    },
+    {
+      "id": 161,
+      "modulo_id": "modulo_12",
+      "modulo": "Tempo de Trabalho",
+      "subcategoria": "Organização do Tempo de Trabalho",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Diretiva 2002/15/CE regula o quê?",
+      "opcoes": [
+        "Tempos de condução",
+        "Organização do tempo de trabalho das pessoas que exercem atividades móveis de transporte rodoviário",
+        "Tacógrafo",
+        "Pesos e dimensões"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Regula a organização do tempo de trabalho das pessoas que exercem atividades móveis de transporte rodoviário.",
+      "referencia_legal": "Diretiva 2002/15/CE"
+    },
+    {
+      "id": 162,
+      "modulo_id": "modulo_12",
+      "modulo": "Tempo de Trabalho",
+      "subcategoria": "Organização do Tempo de Trabalho",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Diretiva 2002/15/CE aplica-se a que trabalhadores?",
+      "opcoes": [
+        "Todos os trabalhadores",
+        "Trabalhadores móveis que trabalham para empresa de transportes estabelecida num Estado-Membro",
+        "Apenas condutores independentes",
+        "Apenas trabalhadores de escritório"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Aplica-se a trabalhadores móveis que trabalham para empresa de transportes estabelecida num Estado-Membro.",
+      "referencia_legal": "Diretiva 2002/15/CE"
+    },
+    {
+      "id": 163,
+      "modulo_id": "modulo_12",
+      "modulo": "Tempo de Trabalho",
+      "subcategoria": "Organização do Tempo de Trabalho",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os condutores independentes estão abrangidos pela Diretiva 2002/15/CE?",
+      "opcoes": [
+        "Sim, desde 2002",
+        "Não, foram provisoriamente excluídos",
+        "Apenas se tiverem empregados",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os condutores independentes foram provisoriamente excluídos do âmbito de aplicação.",
+      "referencia_legal": "Diretiva 2002/15/CE"
+    },
+    {
+      "id": 164,
+      "modulo_id": "modulo_12",
+      "modulo": "Tempo de Trabalho",
+      "subcategoria": "Organização do Tempo de Trabalho",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Diretiva 2002/15/CE prevalece sobre que outra diretiva?",
+      "opcoes": [
+        "Diretiva 96/53/CE",
+        "Diretiva 93/104/CE (organização do tempo de trabalho)",
+        "Diretiva 2006/94/CE",
+        "Diretiva 2007/46/CE"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Diretiva 2002/15/CE prevalece sobre a Diretiva 93/104/CE.",
+      "referencia_legal": "Diretiva 2002/15/CE"
+    },
+    {
+      "id": 165,
+      "modulo_id": "modulo_12",
+      "modulo": "Tempo de Trabalho",
+      "subcategoria": "Organização do Tempo de Trabalho",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Que aspetos do tempo de trabalho a Diretiva 2002/15/CE não abrange?",
+      "opcoes": [
+        "Duração do trabalho",
+        "Períodos de condução e repouso (abrangidos pelo Regulamento 561/2006)",
+        "Trabalho noturno",
+        "Férias anuais"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Os períodos de condução e repouso são abrangidos pelo Regulamento (CE) n.º 561/2006.",
+      "referencia_legal": "Diretiva 2002/15/CE"
+    },
+    {
+      "id": 166,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Categoria C em Portugal habilita a conduzir veículos de mercadorias com que peso?",
+      "opcoes": [
+        "Até 3.500 kg",
+        "Até 7.500 kg",
+        "Superior a 3.500 kg",
+        "Superior a 7.500 kg"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "A Categoria C habilita a conduzir veículos de mercadorias com peso superior a 3.500 kg.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 167,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Categoria C1 em Portugal habilita a conduzir veículos até que peso?",
+      "opcoes": [
+        "3.500 kg",
+        "7.500 kg",
+        "12.000 kg",
+        "40.000 kg"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Categoria C1 habilita a conduzir veículos até 7.500 kg.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 168,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Categoria CE em Portugal habilita a conduzir o quê?",
+      "opcoes": [
+        "Apenas veículos da Categoria C",
+        "Conjuntos de veículos com reboque/semi-reboque superior a 750 kg",
+        "Apenas reboques",
+        "Apenas veículos de passageiros"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Categoria CE habilita a conduzir conjuntos de veículos com reboque/semi-reboque superior a 750 kg.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 169,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Categoria D em Portugal habilita a conduzir o quê?",
+      "opcoes": [
+        "Veículos de mercadorias",
+        "Veículos de passageiros com mais de 8 lugares",
+        "Reboques",
+        "Motociclos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Categoria D habilita a conduzir veículos de passageiros com mais de 8 lugares.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 170,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A partir de que idade se pode tirar a Categoria C em Portugal?",
+      "opcoes": [
+        "16 anos",
+        "18 anos",
+        "21 anos",
+        "24 anos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A idade mínima é 18 anos.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 171,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A partir de que idade não há restrições para a Categoria C em Portugal?",
+      "opcoes": [
+        "18 anos",
+        "21 anos",
+        "24 anos",
+        "25 anos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A partir dos 21 anos não há restrições para a Categoria C.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 172,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Categoria C1E em Portugal permite conjuntos até que peso total?",
+      "opcoes": [
+        "7.500 kg",
+        "12.000 kg",
+        "16.000 kg",
+        "20.000 kg"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Categoria C1E permite conjuntos até 12.000 kg.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 173,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Que documentos são necessários para tirar carta de pesados em Portugal?",
+      "opcoes": [
+        "Apenas documento de identificação",
+        "Documento de identificação, NIF, atestado médico, certificado de avaliação psicológica",
+        "Apenas atestado médico",
+        "Apenas carta de condução ligeira"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "São necessários documento de identificação, NIF, atestado médico e certificado de avaliação psicológica.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 174,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O custo médio para tirar carta de pesados em Portugal é de aproximadamente:",
+      "opcoes": [
+        "500€",
+        "800€",
+        "1.200€",
+        "2.000€"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "O custo médio é de aproximadamente 1.200€.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 175,
+      "modulo_id": "modulo_13",
+      "modulo": "Cartas de Condução (Portugal)",
+      "subcategoria": "Categorias de Cartas",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "A carta de pesados em Portugal requer formação teórica e prática em escola certificada?",
+      "opcoes": [
+        "Sim",
+        "Não, apenas exame",
+        "Apenas prática",
+        "Apenas teórica"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Sim, requer formação teórica e prática em escola certificada.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 176,
+      "modulo_id": "modulo_14",
+      "modulo": "Transporte de Mercadorias Perigosas (ADR)",
+      "subcategoria": "ADR",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte de mercadorias perigosas em Portugal é regulado por que diploma?",
+      "opcoes": [
+        "Decreto-Lei n.º 41-A/2010",
+        "Decreto-Lei n.º 257/2007",
+        "Decreto-Lei n.º 60/2016",
+        "Portaria n.º 331-B/98"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "É regulado pelo Decreto-Lei n.º 41-A/2010.",
+      "referencia_legal": "Decreto-Lei n.º 41-A/2010"
+    },
+    {
+      "id": 177,
+      "modulo_id": "modulo_14",
+      "modulo": "Transporte de Mercadorias Perigosas (ADR)",
+      "subcategoria": "ADR",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte de mercadorias perigosas exige formação específica para:",
+      "opcoes": [
+        "Apenas o condutor",
+        "Conselheiros de segurança e condutores",
+        "Apenas o gestor de transportes",
+        "Apenas a empresa"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Exige formação específica para conselheiros de segurança e condutores.",
+      "referencia_legal": "Decreto-Lei n.º 41-A/2010"
+    },
+    {
+      "id": 178,
+      "modulo_id": "modulo_14",
+      "modulo": "Transporte de Mercadorias Perigosas (ADR)",
+      "subcategoria": "ADR",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Os conselheiros de segurança para transporte de mercadorias perigosas são regulados em Portugal por:",
+      "opcoes": [
+        "Deliberação n.º 517/2018",
+        "Decreto-Lei n.º 257/2007",
+        "Portaria n.º 331-B/98",
+        "Decreto-Lei n.º 60/2016"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "São regulados pela Deliberação n.º 517/2018.",
+      "referencia_legal": "Deliberação n.º 517/2018"
+    },
+    {
+      "id": 179,
+      "modulo_id": "modulo_14",
+      "modulo": "Transporte de Mercadorias Perigosas (ADR)",
+      "subcategoria": "ADR",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte de mercadorias perigosas está sujeito a restrições de circulação?",
+      "opcoes": [
+        "Sim, reguladas pela Portaria n.º 331-B/98",
+        "Não",
+        "Apenas em túneis",
+        "Apenas em centros urbanos"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Sim, reguladas pela Portaria n.º 331-B/98.",
+      "referencia_legal": "Portaria n.º 331-B/98"
+    },
+    {
+      "id": 180,
+      "modulo_id": "modulo_14",
+      "modulo": "Transporte de Mercadorias Perigosas (ADR)",
+      "subcategoria": "ADR",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Comissão Nacional do Transporte de Mercadorias Perigosas foi criada por:",
+      "opcoes": [
+        "Despacho Conjunto n.º 113-A/98",
+        "Decreto-Lei n.º 41-A/2010",
+        "Portaria n.º 331-B/98",
+        "Decreto-Lei n.º 257/2007"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Foi criada pelo Despacho Conjunto n.º 113-A/98.",
+      "referencia_legal": "Despacho Conjunto n.º 113-A/98"
+    },
+    {
+      "id": 181,
+      "modulo_id": "modulo_15",
+      "modulo": "Restrições à Circulação",
+      "subcategoria": "Restrições",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "As restrições à circulação rodoviária em Portugal são reguladas por:",
+      "opcoes": [
+        "Portaria n.º 331-B/98",
+        "Decreto-Lei n.º 257/2007",
+        "Decreto-Lei n.º 60/2016",
+        "Decreto-Lei n.º 41-A/2010"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "São reguladas pela Portaria n.º 331-B/98.",
+      "referencia_legal": "Portaria n.º 331-B/98"
+    },
+    {
+      "id": 182,
+      "modulo_id": "modulo_15",
+      "modulo": "Restrições à Circulação",
+      "subcategoria": "Restrições",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Portaria n.º 331-B/98 foi alterada por:",
+      "opcoes": [
+        "Portarias n.º 578-A/99 e n.º 131/2006",
+        "Decreto-Lei n.º 257/2007",
+        "Decreto-Lei n.º 60/2016",
+        "Decreto-Lei n.º 41-A/2010"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "Foi alterada pelas Portarias n.º 578-A/99 e n.º 131/2006.",
+      "referencia_legal": "Portaria n.º 331-B/98"
+    },
+    {
+      "id": 183,
+      "modulo_id": "modulo_15",
+      "modulo": "Restrições à Circulação",
+      "subcategoria": "Restrições",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "As restrições à circulação aplicam-se a que tipo de veículos?",
+      "opcoes": [
+        "Apenas veículos ligeiros",
+        "Veículos pesados de mercadorias",
+        "Apenas veículos de passageiros",
+        "Apenas motociclos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Aplicam-se a veículos pesados de mercadorias.",
+      "referencia_legal": "Portaria n.º 331-B/98"
+    },
+    {
+      "id": 184,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O certificado de capacidade profissional em Portugal é emitido por:",
+      "opcoes": [
+        "A Câmara Municipal",
+        "O IMTT, I.P.",
+        "A PSP",
+        "O Ministério da Educação"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "É emitido pelo IMTT, I.P.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 185,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O exame de capacidade profissional em Portugal tem quantas provas?",
+      "opcoes": [
+        "Uma prova escrita",
+        "Duas provas escritas (escolha múltipla e exercícios práticos)",
+        "Apenas prova oral",
+        "Apenas prova prática"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Tem duas provas escritas: escolha múltipla e exercícios práticos.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 186,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O exame de capacidade profissional para âmbito nacional tem duração de:",
+      "opcoes": [
+        "1 hora",
+        "2 horas",
+        "3 horas",
+        "4 horas"
+      ],
+      "resposta_correta": 3,
+      "explicacao": "O exame para âmbito nacional tem duração de 4 horas.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 187,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O exame para extensão ao âmbito internacional tem duração de:",
+      "opcoes": [
+        "30 minutos",
+        "1 hora",
+        "2 horas",
+        "3 horas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O exame para extensão ao âmbito internacional tem duração de 1 hora.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 188,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O certificado de capacidade profissional caduca após:",
+      "opcoes": [
+        "3 anos",
+        "5 anos",
+        "7 anos",
+        "10 anos"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Caduca após 5 anos.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 189,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A renovação do certificado de capacidade profissional requer:",
+      "opcoes": [
+        "Novo exame sempre",
+        "Exercício da profissão com boas práticas",
+        "Apenas pagamento de taxa",
+        "Apenas formação contínua"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Requer o exercício da profissão com boas práticas.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 190,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O pedido de renovação do certificado de capacidade profissional deve ser apresentado com quantos dias de antecedência?",
+      "opcoes": [
+        "30 dias",
+        "45 dias",
+        "60 dias",
+        "90 dias"
+      ],
+      "resposta_correta": 2,
+      "explicacao": "Deve ser apresentado com 60 dias de antecedência.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 191,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Considera-se exercício da profissão com boas práticas quando a empresa não foi condenada por:",
+      "opcoes": [
+        "Apenas infrações leves",
+        "Três contraordenações muito graves ou sanção acessória",
+        "Apenas uma contraordenação",
+        "Apenas infrações rodoviárias"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Considera-se boas práticas quando não houve condenação por três contraordenações muito graves ou sanção acessória.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 192,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "Para empresas com mais de 5 veículos, o número de contraordenações a considerar:",
+      "opcoes": [
+        "Mantém-se em 3",
+        "Aumenta na relação de 3 por cada 5 veículos",
+        "Diminui",
+        "Não se aplica"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Aumenta na relação de 3 por cada 5 veículos.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 193,
+      "modulo_id": "modulo_16",
+      "modulo": "Formação Profissional",
+      "subcategoria": "Capacidade Profissional",
+      "dificuldade": "avancado",
+      "tipo": "escolha_multipla",
+      "pergunta": "A comprovação de boas práticas é feita através de:",
+      "opcoes": [
+        "Apenas declaração da empresa",
+        "Consulta oficiosa dos registos do IMTT e certidões da ACT e ANSR",
+        "Apenas certidão criminal",
+        "Apenas inspeção"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "É feita através de consulta oficiosa dos registos do IMTT e certidões da ACT e ANSR.",
+      "referencia_legal": "Legislação nacional"
+    },
+    {
+      "id": 194,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta própria é caracterizado por:",
+      "opcoes": [
+        "Transportar mercadorias de terceiros mediante remuneração",
+        "Ser atividade acessória, transportar mercadorias próprias, usar veículos próprios",
+        "Ser a atividade principal da empresa",
+        "Estar sujeito a licenciamento obrigatório"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Caracteriza-se por ser atividade acessória, transportar mercadorias próprias e usar veículos próprios.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 195,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta de outrem é caracterizado por:",
+      "opcoes": [
+        "Transportar mercadorias próprias",
+        "Transportar mercadorias de terceiros mediante contrato com remuneração do frete",
+        "Não necessitar de licenciamento",
+        "Ser atividade acessória"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Caracteriza-se por transportar mercadorias de terceiros mediante contrato com remuneração do frete.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 196,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta própria necessita de licenciamento?",
+      "opcoes": [
+        "Sim, como o transporte por conta de outrem",
+        "Não, está liberalizado",
+        "Apenas para veículos de mais de 3,5 toneladas",
+        "Apenas em transporte internacional"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Está liberalizado, não necessitando de licenciamento.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 197,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta de outrem é titulado por que documento?",
+      "opcoes": [
+        "Alvará ou Licença Comunitária",
+        "Carta de condução",
+        "CAM",
+        "Certificado de formação"
+      ],
+      "resposta_correta": 0,
+      "explicacao": "É titulado por Alvará ou Licença Comunitária.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 198,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Uma empresa que efetue transporte por conta de outrem sem licença está sujeita a multa de:",
+      "opcoes": [
+        "500€ a 1.000€",
+        "1.250€ a 3.740€ (pessoa singular) ou 5.000€ a 15.000€ (pessoa coletiva)",
+        "10.000€ a 20.000€",
+        "20.000€ a 50.000€"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A multa é de 1.250€ a 3.740€ para pessoa singular ou 5.000€ a 15.000€ para pessoa coletiva.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 199,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta própria pode ser exercido por:",
+      "opcoes": [
+        "Apenas empresas licenciadas",
+        "Pessoas singulares ou coletivas como atividade acessória",
+        "Apenas cooperativas",
+        "Apenas sociedades comerciais"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Pode ser exercido por pessoas singulares ou coletivas como atividade acessória.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 200,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta de outrem pode ser exercido por:",
+      "opcoes": [
+        "Qualquer pessoa singular",
+        "Empresas, cooperativas, associações ou fundações com fins comerciais licenciadas pelo IMT",
+        "Apenas sociedades anónimas",
+        "Apenas transportadores individuais"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Pode ser exercido por empresas, cooperativas, associações ou fundações com fins comerciais licenciadas pelo IMT.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 201,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "Um veículo de peso bruto inferior a 2.500 kg utilizado em transporte por conta de outrem necessita de licenciamento?",
+      "opcoes": [
+        "Sim",
+        "Não",
+        "Apenas se for internacional",
+        "Apenas se transportar mercadorias perigosas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Não necessita de licenciamento.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 202,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta própria está sujeito a que formalidades?",
+      "opcoes": [
+        "Licenciamento obrigatório",
+        "Nenhuma formalidade ou licenciamento",
+        "Apenas registo no IMT",
+        "Apenas seguro específico"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "Não está sujeito a formalidades ou licenciamento.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 203,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "facil",
+      "tipo": "escolha_multipla",
+      "pergunta": "O transporte por conta de outrem em Portugal é licenciado por:",
+      "opcoes": [
+        "A Câmara Municipal",
+        "O IMT, I.P.",
+        "A PSP",
+        "O Ministério da Economia"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "É licenciado pelo IMT, I.P.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 204,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "O alvará é o título habilitante para que tipo de transporte?",
+      "opcoes": [
+        "Transporte internacional",
+        "Transporte nacional por conta de outrem (empresas licenciadas antes de 2007)",
+        "Transporte por conta própria",
+        "Transporte de passageiros"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "O alvará é o título habilitante para transporte nacional por conta de outrem.",
+      "referencia_legal": "Decreto-Lei n.º 257/2007"
+    },
+    {
+      "id": 205,
+      "modulo_id": "modulo_17",
+      "modulo": "Transporte por Conta Própria vs. Conta de Outrem",
+      "subcategoria": "Regimes de Transporte",
+      "dificuldade": "intermedio",
+      "tipo": "escolha_multipla",
+      "pergunta": "A Licença Comunitária é o título habilitante para que tipo de transporte?",
+      "opcoes": [
+        "Transporte nacional",
+        "Transporte internacional",
+        "Transporte por conta própria",
+        "Transporte de mercadorias perigosas"
+      ],
+      "resposta_correta": 1,
+      "explicacao": "A Licença Comunitária é o título habilitante para transporte internacional.",
+      "referencia_legal": "Regulamento (CE) n.º 1072/2009"
+    }
+  ]
+}

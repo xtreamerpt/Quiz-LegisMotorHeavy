@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Quiz Legislação Motorista de Pesados - Treino e Simulação" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Quiz Motorista Pesados</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚛</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🚛</span>
+        <span class="logo-text">Quiz Pesados</span>
+      </div>
+      <div class="header-actions">
+        <button id="btn-theme" class="icon-btn" title="Mudar tema" aria-label="Mudar tema">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="btn-scores" class="icon-btn" title="Highscores" aria-label="Highscores">
+          🏆
+        </button>
+      </div>
+    </header>
+
+    <!-- SCREENS -->
+    <main>
+      <!-- HOME / SETUP -->
+      <section id="screen-home" class="screen active">
+        <div class="hero">
+          <h1>Legislação de Motorista de Pesados</h1>
+          <p class="subtitle">Treina com perguntas oficiais · UE + Portugal</p>
+        </div>
+
+        <div class="setup-card">
+          <div class="setup-group">
+            <label>Dificuldade</label>
+            <div class="segmented" id="difficulty-group">
+              <button class="seg-btn active" data-value="todas">Todas</button>
+              <button class="seg-btn" data-value="facil">Fácil</button>
+              <button class="seg-btn" data-value="intermedio">Intermédio</button>
+              <button class="seg-btn" data-value="avancado">Avançado</button>
+            </div>
+          </div>
+
+          <div class="setup-group">
+            <label>Número de perguntas: <span id="num-label">10</span></label>
+            <input type="range" id="num-questions" min="5" max="15" value="10" step="1" />
+            <div class="range-labels">
+              <span>5</span><span>10</span><span>15</span>
+            </div>
+          </div>
+
+          <div class="setup-group">
+            <label>Tempo máximo (desafio)</label>
+            <div class="segmented" id="time-group">
+              <button class="seg-btn active" data-value="0">Sem limite</button>
+              <button class="seg-btn" data-value="10">10 min</button>
+              <button class="seg-btn" data-value="20">20 min</button>
+              <button class="seg-btn" data-value="30">30 min</button>
+            </div>
+          </div>
+
+          <button id="btn-start" class="btn-primary btn-lg">
+            <span>Iniciar Teste</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </div>
+
+        <div class="stats-preview" id="stats-preview">
+          <div class="stat">
+            <span class="stat-value" id="total-perguntas">205</span>
+            <span class="stat-label">Perguntas</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="best-score">—</span>
+            <span class="stat-label">Melhor</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="tests-done">0</span>
+            <span class="stat-label">Testes</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUIZ -->
+      <section id="screen-quiz" class="screen">
+        <div class="quiz-header">
+          <div class="progress-wrap">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <div class="quiz-meta">
+            <span id="q-counter">1 / 10</span>
+            <span id="timer" class="timer hidden">⏱ 10:00</span>
+          </div>
+        </div>
+
+        <div class="question-card" id="question-card">
+          <div class="q-badge" id="q-badge">Módulo</div>
+          <h2 id="q-text">Pergunta</h2>
+          <div class="options" id="options"></div>
+        </div>
+
+        <div class="quiz-footer">
+          <button id="btn-next" class="btn-primary" disabled>
+            Seguinte
+          </button>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section id="screen-results" class="screen">
+        <div class="results-hero" id="results-hero">
+          <div class="score-circle">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="score-bg" />
+              <circle cx="50" cy="50" r="45" class="score-fill" id="score-circle" />
+            </svg>
+            <div class="score-text">
+              <span id="score-percent">0%</span>
+              <span id="score-detail">0/10</span>
+            </div>
+          </div>
+          <h2 id="results-title">Resultado</h2>
+          <p id="results-sub"></p>
+        </div>
+
+        <div class="results-actions">
+          <button id="btn-review" class="btn-secondary">Rever erros</button>
+          <button id="btn-again" class="btn-primary">Novo teste</button>
+        </div>
+
+        <div id="review-panel" class="review-panel hidden"></div>
+      </section>
+
+      <!-- HIGHSCORES -->
+      <section id="screen-scores" class="screen">
+        <div class="scores-header">
+          <h2>🏆 Highscores</h2>
+          <button id="btn-clear-scores" class="btn-ghost">Limpar</button>
+        </div>
+        <div id="scores-list" class="scores-list"></div>
+        <button id="btn-back-home" class="btn-secondary btn-block">Voltar</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
