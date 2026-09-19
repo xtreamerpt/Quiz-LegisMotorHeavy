@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="h-full bg-slate-50">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Exames de Inglês - Selectividad / EvAU (2º Bachillerato)</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Inter & Playfair Display for academic feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tania: {
+              navy: '#0a2540',
+              navyDark: '#061729',
+              navyLight: '#1a365d',
+              blue: '#2563eb',
+              gold: '#d97706',
+              goldLight: '#fef3c7',
+              goldHover: '#b45309',
+              bg: '#f8fafc',
+              border: '#e2e8f0'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    /* Print Specific Styles */
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .question-card {
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+        margin-bottom: 1.5rem !important;
+        background: #fff !important;
+        padding: 1rem !important;
+      }
+      .print-header {
+        border-bottom: 2px solid #0a2540;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        border-bottom: 1px dashed #000 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+      }
+    }
+
+    .print-only {
+      display: none;
+    }
+  </style>
+</head>
+<body class="h-full font-sans bg-tania-bg text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- PRINT HEADER (Only visible when printing) -->
+  <div class="print-only p-6 print-header">
+    <div class="flex justify-between items-center border-b-2 border-tania-navy pb-4 mb-4">
+      <div>
+        <h1 class="text-xl font-bold font-serif text-tania-navy uppercase tracking-wide">Colegio Compañía de María • Vigo</h1>
+        <h2 class="text-base font-semibold text-slate-700">English Department — 2º Bachillerato / EvAU</h2>
+        <p class="text-xs text-slate-500">Official Practice & Evaluation Examination Sheet</p>
+      </div>
+      <div class="text-right border border-tania-navy p-2 rounded text-xs">
+        <p class="font-bold">MARK / PONTUAÇÃO</p>
+        <p class="text-xl font-serif font-bold text-center mt-1">_____ / 10</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 text-xs mb-6 border-b pb-4 border-slate-300">
+      <div><strong>Student's Name:</strong> ____________________________</div>
+      <div><strong>Date:</strong> ____ / ____ / 2026</div>
+      <div><strong>Group / Course:</strong> 2º Bachillerato ___</div>
+    </div>
+    <div id="print-exam-title-container" class="text-center my-4">
+      <h3 id="print-exam-title" class="text-lg font-bold uppercase text-tania-navy font-serif">English Language Assessment Exam</h3>
+      <p id="print-exam-subtitle" class="text-xs italic text-slate-600">Answer all questions clearly in the space provided.</p>
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION (Screen) -->
+  <header class="no-print bg-tania-navy text-white shadow-lg border-b-4 border-tania-gold sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Branding -->
+        <div class="flex items-center space-x-4">
+          <div class="bg-white/10 p-2.5 rounded-xl border border-white/20 shadow-inner flex items-center justify-center">
+            <i class="fa-solid font-bold fa-graduation-cap text-2xl text-amber-400"></i>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-xs font-bold tracking-widest uppercase bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded border border-amber-400/30">Tania's Academy</span>
+              <span class="text-xs text-slate-300 hidden sm:inline">• 2º Bacharelato / EvAU</span>
+            </div>
+            <h1 class="text-xl sm:text-2xl font-bold font-serif tracking-tight text-white flex items-center gap-2">
+              Gerador de Exames de Inglês
+            </h1>
+          </div>
+        </div>
+
+        <!-- Quick Top Actions -->
+        <div class="flex items-center space-x-3">
+          <button onclick="generateQuickExam()" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-4 py-2 rounded-lg text-xs sm:text-sm shadow-md transition flex items-center space-x-2 border border-amber-300/40">
+            <i class="fa-solid fa-bolt text-slate-900"></i>
+            <span class="hidden md:inline">Exame Rápido (10 Qs)</span>
+            <span class="md:hidden">Rápido</span>
+          </button>
+          <button onclick="toggleQuestionBankModal()" class="bg-white/10 hover:bg-white/20 text-white font-medium px-3 py-2 rounded-lg text-xs sm:text-sm transition flex items-center space-x-2 border border-white/10">
+            <i class="fa-solid fa-database text-amber-300"></i>
+            <span class="hidden sm:inline">Banco de Questões (100)</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main class="no-print flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+    
+    <!-- LEFT CONTROL SIDEBAR (Filter & Generator Settings) -->
+    <aside class="lg:col-span-4 space-y-6">
+      
+      <!-- Generator Config Panel -->
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 space-y-5 sticky top-28">
+        <div class="border-b border-slate-100 pb-4">
+          <h2 class="text-lg font-bold text-tania-navy flex items-center space-x-2">
+            <i class="fa-solid fa-sliders text-tania-blue"></i>
+            <span>Configuração do Exame</span>
+          </h2>
+          <p class="text-xs text-slate-500 mt-1">Personalize os tópicos, dificuldade e formato do teste.</p>
+        </div>
+
+        <!-- Mode Toggle -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Modo de Resolução</label>
+          <div class="grid grid-cols-2 gap-2 bg-slate-100 p-1 rounded-xl text-xs font-semibold">
+            <button id="btn-mode-practice" onclick="setMode('practice')" class="py-2 px-3 rounded-lg text-center transition shadow-sm bg-white text-tania-navy font-bold">
+              <i class="fa-solid fa-graduation-cap mr-1 text-tania-blue"></i> Prática
+            </button>
+            <button id="btn-mode-simulated" onclick="setMode('simulated')" class="py-2 px-3 rounded-lg text-center transition text-slate-600 hover:text-slate-900">
+              <i class="fa-solid fa-stopwatch mr-1 text-amber-600"></i> Simulado
+            </button>
+          </div>
+          <p id="mode-description" class="text-[11px] text-slate-500 mt-1.5 italic">
+            <i class="fa-solid fa-circle-info mr-1 text-tania-blue"></i> Feedback imediato e acesso a explicações detalhadas por questão.
+          </p>
+        </div>
+
+        <!-- Filter: Category -->
+        <div>
+          <label for="filter-category" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Categoria / Tópico Grammar</label>
+          <select id="filter-category" class="w-full text-xs font-medium border border-slate-300 rounded-xl px-3 py-2.5 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-tania-blue transition">
+            <option value="ALL">Todas as Categorias (Misto)</option>
+            <option value="Reported Speech & Reporting Verbs">Reported Speech & Reporting Verbs</option>
+            <option value="Voz Pasiva y Causativos">Voz Pasiva y Causativos</option>
+            <option value="Condicionales e Inversión">Condicionales e Inversión</option>
+            <option value="Cleft Sentences & Énfasis">Cleft Sentences & Énfasis</option>
+            <option value="Verbos Modales y Deducciones">Verbos Modales y Deducciones</option>
+            <option value="Cláusulas Relativas">Cláusulas Relativas</option>
+            <option value="Fonética y Pronunciación">Fonética y Pronunciación</option>
+            <option value="Vocabulario y Phrasal Verbs">Vocabulario y Phrasal Verbs</option>
+          </select>
+        </div>
+
+        <!-- Filter: Difficulty -->
+        <div>
+          <label for="filter-difficulty" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Nível de Dificuldade</label>
+          <select id="filter-difficulty" class="w-full text-xs font-medium border border-slate-300 rounded-xl px-3 py-2.5 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-tania-blue transition">
+            <option value="ALL">Todos os Níveis (Aleatório)</option>
+            <option value="Fácil">Fácil</option>
+            <option value="Intermedio">Intermédio</option>
+            <option value="Difícil">Difícil</option>
+          </select>
+        </div>
+
+        <!-- Question Count slider/select -->
+        <div>
+          <div class="flex justify-between items-center mb-1.5">
+            <label for="filter-count" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Número de Questões</label>
+            <span id="count-display" class="text-xs font-bold bg-tania-navy/10 text-tania-navy px-2 py-0.5 rounded-md">10 Questões</span>
+          </div>
+          <input type="range" id="filter-count" min="5" max="30" step="5" value="10" oninput="updateCountDisplay(this.value)" class="w-full accent-tania-navy cursor-pointer">
+          <div class="flex justify-between text-[10px] text-slate-400 font-medium px-0.5 mt-1">
+            <span>5</span>
+            <span>10</span>
+            <span>15</span>
+            <span>20</span>
+            <span>30</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="pt-2 space-y-2.5">
+          <button onclick="generateCustomExam()" class="w-full bg-tania-navy hover:bg-tania-navyLight text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm shadow-md transition flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+            <span>Gerar Novo Exame</span>
+          </button>
+          
+          <button onclick="resetCurrentExam()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2.5 px-4 rounded-xl text-xs transition flex items-center justify-center space-x-2 border border-slate-200">
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>Reiniciar Respostas</span>
+          </button>
+        </div>
+
+        <!-- Information Box -->
+        <div class="bg-amber-500/10 border border-amber-500/20 rounded-xl p-3 text-xs text-amber-900 flex items-start space-x-2">
+          <i class="fa-solid fa-lightbulb text-amber-600 text-sm mt-0.5"></i>
+          <div>
+            <strong class="font-bold">Dica da Tania:</strong> O exame do EvAU exige máxima precisão nas transformações de Reported Speech e Voz Passiva.
+          </div>
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- RIGHT EXAM DISPLAY AREA -->
+    <section class="lg:col-span-8 space-y-6">
+
+      <!-- Exam Toolbar & Status -->
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-2">
+            <span id="active-exam-badge" class="bg-tania-navy text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Modo Prática</span>
+            <span id="active-count-badge" class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border">10 Questões</span>
+          </div>
+          <h2 id="exam-title-display" class="text-lg font-bold font-serif text-tania-navy mt-1">Exame de Avaliação Selectividad / EvAU</h2>
+        </div>
+
+        <!-- Timer & Submission Actions -->
+        <div class="flex items-center space-x-3">
+          <!-- Timer (Only for Simulated Mode) -->
+          <div id="timer-box" class="hidden flex items-center space-x-2 bg-slate-900 text-amber-400 px-3.5 py-1.5 rounded-xl text-sm font-mono font-bold shadow-inner border border-slate-800">
+            <i class="fa-solid fa-stopwatch animate-pulse"></i>
+            <span id="timer-display">00:00</span>
+          </div>
+
+          <!-- Print Controls Dropdown / Buttons -->
+          <div class="flex items-center space-x-1">
+            <button onclick="triggerPrint(false)" title="Imprimir Exame Limpo (Para Estudante)" class="bg-slate-100 hover:bg-slate-200 text-tania-navy font-semibold px-3 py-2 rounded-xl text-xs border border-slate-300 transition flex items-center space-x-1.5">
+              <i class="fa-solid fa-print"></i>
+              <span class="hidden sm:inline">Exame PDF</span>
+            </button>
+            <button onclick="triggerPrint(true)" title="Imprimir Gabarito (Com Soluções para Professor)" class="bg-amber-50 hover:bg-amber-100 text-amber-800 font-semibold px-3 py-2 rounded-xl text-xs border border-amber-200 transition flex items-center space-x-1.5">
+              <i class="fa-solid fa-key"></i>
+              <span class="hidden sm:inline">Gabarito</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Score Bar (Simulated Mode / After Submit) -->
+      <div id="score-summary-bar" class="hidden bg-gradient-to-r from-tania-navy to-tania-navyLight text-white rounded-2xl p-6 shadow-md border border-tania-gold/30">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center space-x-4">
+            <div id="score-circle" class="w-16 h-16 rounded-full bg-amber-500 text-slate-950 font-bold font-serif text-2xl flex items-center justify-center shadow-lg border-2 border-amber-300">
+              0.0
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Resultado Final do Exame</h3>
+              <p id="score-details" class="text-xs text-slate-300">Respondeu a 0 de 10 questões corretamente.</p>
+            </div>
+          </div>
+          <button onclick="resetCurrentExam()" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold px-4 py-2.5 rounded-xl shadow transition">
+            <i class="fa-solid fa-arrow-rotate-left mr-1"></i> Tentar Novamente
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION CARDS CONTAINER -->
+      <div id="questions-container" class="space-y-6">
+        <!-- Generated Dynamically via JS -->
+      </div>
+
+      <!-- Bottom Submit Button (Simulated Mode) -->
+      <div id="submit-button-container" class="hidden text-center pt-4">
+        <button onclick="submitSimulatedExam()" class="bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-bold px-8 py-3.5 rounded-2xl shadow-xl text-sm transition transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 mx-auto border border-emerald-400/30">
+          <i class="fa-solid fa-paper-plane text-emerald-200"></i>
+          <span>Submeter e Corrigir Exame</span>
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="no-print bg-tania-navyDark text-slate-400 border-t border-slate-800 py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs space-y-2">
+      <p class="font-medium text-slate-300">Colegio Compañía de María • Departamento de Inglés (2º Bachillerato / EvAU)</p>
+      <p class="text-slate-500">Desenvolvido com a Base de Dados Pedagógica de Inglês da Tania. 100 Questões Oficialmente Formatadas.</p>
+    </div>
+  </footer>
+
+  <!-- QUESTION BANK / EXPLORE MODAL -->
+  <div id="modal-bank" class="no-print fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[85vh] flex flex-col border border-slate-200 overflow-hidden">
+      <!-- Modal Header -->
+      <div class="bg-tania-navy text-white px-6 py-4 flex justify-between items-center border-b border-tania-gold/30">
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-database text-amber-400"></i>
+          <h3 class="font-bold text-base font-serif">Banco Geral de Questões (100 itens)</h3>
+        </div>
+        <button onclick="toggleQuestionBankModal()" class="text-slate-400 hover:text-white transition text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <!-- Modal Search/Filter -->
+      <div class="p-4 bg-slate-50 border-b border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <input type="text" id="bank-search" oninput="filterBankQuestions()" placeholder="Procurar palavra-chave ou enunciado..." class="text-xs border rounded-xl px-3 py-2 focus:ring-2 focus:ring-tania-blue outline-none">
+        <select id="bank-category-filter" onchange="filterBankQuestions()" class="text-xs border rounded-xl px-3 py-2 focus:ring-2 focus:ring-tania-blue outline-none">
+          <option value="ALL">Todas as Categorias</option>
+          <option value="Reported Speech & Reporting Verbs">Reported Speech & Reporting Verbs</option>
+          <option value="Voz Pasiva y Causativos">Voz Pasiva y Causativos</option>
+          <option value="Condicionales e Inversión">Condicionales e Inversión</option>
+          <option value="Cleft Sentences & Énfasis">Cleft Sentences & Énfasis</option>
+          <option value="Verbos Modales y Deducciones">Verbos Modales y Deducciones</option>
+          <option value="Cláusulas Relativas">Cláusulas Relativas</option>
+          <option value="Fonética y Pronunciación">Fonética y Pronunciación</option>
+          <option value="Vocabulario y Phrasal Verbs">Vocabulario y Phrasal Verbs</option>
+        </select>
+      </div>
+      <!-- Modal Body List -->
+      <div id="bank-questions-list" class="p-6 overflow-y-auto space-y-4 flex-grow">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // -------------------------------------------------------------
+    // DATABASE: 100 Selectividad Questions from Tania's JSON File
+    // -------------------------------------------------------------
+    const questionsDatabase = [
+  {
+    "id": 1,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I am reading a book,' she said.",
+    "opciones": null,
+    "respuesta_correcta": "She said that she was reading a book.",
+    "explicacion": "En el discurso indirecto (Reported Speech), el Present Continuous ('am reading') cambia a Past Continuous ('was reading') cuando el verbo de reporte está en pasado."
+  },
+  {
+    "id": 2,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'Did you finish your homework?' he asked me.",
+    "opciones": null,
+    "respuesta_correcta": "He asked me if I had finished my homework.",
+    "explicacion": "Para preguntas de sí/no en discurso indirecto, se utiliza 'if' o 'whether', y el Past Simple ('did finish') cambia a Past Perfect ('had finished')."
+  },
+  {
+    "id": 3,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'We will visit our grandparents tomorrow,' they said.",
+    "opciones": null,
+    "respuesta_correcta": "They said that they would visit their grandparents the next day.",
+    "explicacion": "El auxiliar 'will' cambia a 'would', el pronombre 'our' pasa a 'their' y la expresión temporal 'tomorrow' se transforma en 'the next day' o 'the following day'."
+  },
+  {
+    "id": 4,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'Why are you crying?' she asked.",
+    "opciones": null,
+    "respuesta_correcta": "She asked why I was crying.",
+    "explicacion": "Las preguntas con partículas 'wh-' mantienen la palabra interrogativa, pero pierden la estructura de pregunta, pasando al orden afirmativo (sujeto + verbo)."
+  },
+  {
+    "id": 5,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I have already eaten lunch,' Mark told us.",
+    "opciones": null,
+    "respuesta_correcta": "Mark told us that he had already eaten lunch.",
+    "explicacion": "El Present Perfect ('have eaten') retrocede un tiempo verbal en el pasado, convirtiéndose en Past Perfect ('had eaten')."
+  },
+  {
+    "id": 6,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I am studying for the exam,' she said.",
+    "opciones": null,
+    "respuesta_correcta": "She said that she was studying for the exam.",
+    "explicacion": "El Present Continuous cambia a Past Continuous para reflejar el momento en que se reporta la acción."
+  },
+  {
+    "id": 7,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'Where did you go yesterday?' he asked me.",
+    "opciones": null,
+    "respuesta_correcta": "He asked me where I had gone the day before.",
+    "explicacion": "El Past Simple ('did go') cambia a Past Perfect ('had gone') y la palabra de tiempo 'yesterday' se transforma en 'the day before'."
+  },
+  {
+    "id": 8,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'We can go to the park later,' they said.",
+    "opciones": null,
+    "respuesta_correcta": "They said that they could go to the park later.",
+    "explicacion": "El verbo modal 'can' cambia a su forma en pasado 'could'."
+  },
+  {
+    "id": 9,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I will call you tomorrow,' John told her.",
+    "opciones": null,
+    "respuesta_correcta": "John told her that he would call her the next day.",
+    "explicacion": "Se realiza el cambio de 'will' a 'would' y de 'tomorrow' a 'the next day'."
+  },
+  {
+    "id": 10,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'Do you know how to play the piano?' Sarah asked me.",
+    "opciones": null,
+    "respuesta_correcta": "Sarah asked me if I knew how to play the piano.",
+    "explicacion": "Al tratarse de una pregunta general (Yes/No question), se introduce con 'if' y el verbo en presente ('know') pasa a pasado ('knew')."
+  },
+  {
+    "id": 11,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I didn't like the movie,' Mark said.",
+    "opciones": null,
+    "respuesta_correcta": "Mark said that he hadn't liked the movie.",
+    "explicacion": "La forma negativa en Past Simple ('didn't like') se transforma en Past Perfect negativo ('hadn't liked')."
+  },
+  {
+    "id": 12,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Difícil",
+    "tipo": "Verbos de Reporte",
+    "enunciado": "Rewrite using 'suggest': 'Why don't we order pizza for dinner?' she said.",
+    "opciones": null,
+    "respuesta_correcta": "She suggested ordering pizza for dinner.",
+    "explicacion": "El verbo de reporte 'suggest' va seguido directamente de un gerundio (-ing) cuando no se especifica el sujeto de la acción propuesta."
+  },
+  {
+    "id": 13,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Verbos de Reporte",
+    "enunciado": "Rewrite in Reported Speech: 'Please don't be late,' the teacher told us.",
+    "opciones": null,
+    "respuesta_correcta": "The teacher told us not to be late.",
+    "explicacion": "Para imperativos negativos o peticiones, se utiliza la estructura 'tell / ask + objeto + not to + infinitivo'."
+  },
+  {
+    "id": 14,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I have never been to Spain,' he said.",
+    "opciones": null,
+    "respuesta_correcta": "He said that he had never been to Spain.",
+    "explicacion": "El Present Perfect ('have never been') pasa a Past Perfect ('had never been')."
+  },
+  {
+    "id": 15,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'When are you leaving for the trip?' she asked him.",
+    "opciones": null,
+    "respuesta_correcta": "She asked him when he was leaving for the trip.",
+    "explicacion": "En las preguntas indirectas con 'when', el orden gramatical pasa a ser afirmativo (sujeto + verbo) y el Present Continuous se transforma en Past Continuous."
+  },
+  {
+    "id": 16,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite in Reported Speech: 'I need money,' he said.",
+    "opciones": null,
+    "respuesta_correcta": "He said that he needed money.",
+    "explicacion": "El Present Simple ('need') cambia a Past Simple ('needed') al reportar la afirmación."
+  },
+  {
+    "id": 17,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Difícil",
+    "tipo": "Verbos de Reporte",
+    "enunciado": "Rewrite using 'advise': 'You should save more money,' he said to me.",
+    "opciones": null,
+    "respuesta_correcta": "He advised me to save more money.",
+    "explicacion": "El verbo de reporte 'advise' requiere la estructura 'advise + objeto + infinitivo con to'."
+  },
+  {
+    "id": 18,
+    "categoria": "Reported Speech & Reporting Verbs",
+    "dificultad": "Difícil",
+    "tipo": "Verbos de Reporte",
+    "enunciado": "Rewrite using 'apologize': 'I am sorry for forgetting the meeting,' she said.",
+    "opciones": null,
+    "respuesta_correcta": "She apologized for forgetting the meeting.",
+    "explicacion": "El verbo 'apologize' exige la preposición 'for' seguida de un verbo en gerundio ('for + -ing')."
+  },
+  {
+    "id": 19,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Change to Passive Voice: People protect the environment.",
+    "opciones": null,
+    "respuesta_correcta": "The environment is protected.",
+    "explicacion": "En el Present Simple pasivo se utiliza el verbo 'to be' en presente (is/are) seguido del participio pasado del verbo principal ('protected')."
+  },
+  {
+    "id": 20,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Change to Passive Voice: They will complete the project tomorrow.",
+    "opciones": null,
+    "respuesta_correcta": "The project will be completed tomorrow.",
+    "explicacion": "La pasiva de futuro simple con 'will' se forma con 'will + be + participio pasado'."
+  },
+  {
+    "id": 21,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Modales Pasivos",
+    "enunciado": "Write a passive sentence using the prompt: (must / respect / rules)",
+    "opciones": null,
+    "respuesta_correcta": "The rules must be respected.",
+    "explicacion": "La voz pasiva con verbos modales se construye con 'modal + be + participio pasado'."
+  },
+  {
+    "id": 22,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Modales Pasivos",
+    "enunciado": "Write a passive sentence using the prompt: (should / clean / park)",
+    "opciones": null,
+    "respuesta_correcta": "The park should be cleaned.",
+    "explicacion": "Se emplea la estructura pasiva del modal: 'should + be + participio pasado' ('cleaned')."
+  },
+  {
+    "id": 23,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Causativos",
+    "enunciado": "Rewrite using a Causative structure: She / her hair / cut (Past Simple)",
+    "opciones": null,
+    "respuesta_correcta": "She had her hair cut.",
+    "explicacion": "La estructura causativa (Have something done) expresa que un tercero realiza un servicio para el sujeto. Estructura: 'sujeto + have/had + objeto + participio pasado'."
+  },
+  {
+    "id": 24,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Causativos",
+    "enunciado": "Rewrite using a Causative structure: We / the house / renovate (Past Simple)",
+    "opciones": null,
+    "respuesta_correcta": "We had the house renovated.",
+    "explicacion": "Indica que se contrató a alguien para renovar la casa. Forma: 'had + objeto (the house) + participio (renovated)'."
+  },
+  {
+    "id": 25,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Pasiva de Reporte",
+    "enunciado": "Change to Passive Voice: Experts predict a recession.",
+    "opciones": null,
+    "respuesta_correcta": "A recession is predicted by experts.",
+    "explicacion": "El objeto 'a recession' pasa a ser el sujeto de la oración pasiva en presente simple."
+  },
+  {
+    "id": 26,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Pasiva de Reporte",
+    "enunciado": "Change to Passive Voice: They reported good profits.",
+    "opciones": null,
+    "respuesta_correcta": "Good profits were reported.",
+    "explicacion": "Al estar el verbo en Past Simple ('reported'), la pasiva utiliza 'were' + participio pasado."
+  },
+  {
+    "id": 27,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete with the correct Future Passive form: The new building ___________ (will / construct) in two years.",
+    "opciones": null,
+    "respuesta_correcta": "will be constructed",
+    "explicacion": "Estructura del futuro pasivo: 'will + be + participio pasado' del verbo entre paréntesis."
+  },
+  {
+    "id": 28,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete with the correct Future Passive form: The reports ___________ (be / send) by next Monday.",
+    "opciones": null,
+    "respuesta_correcta": "will be sent",
+    "explicacion": "Forma pasiva del futuro simple para expresar una acción programada o completada en el futuro."
+  },
+  {
+    "id": 29,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete with the correct Future Passive form: The decision ___________ (make) at the meeting next week.",
+    "opciones": null,
+    "respuesta_correcta": "will be made",
+    "explicacion": "Participio irregular del verbo 'make' es 'made', precedido por 'will be'."
+  },
+  {
+    "id": 30,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete with the correct Future Passive form: The project ___________ (finish) by the end of the year.",
+    "opciones": null,
+    "respuesta_correcta": "will be finished",
+    "explicacion": "Futuro pasivo regular formado por 'will be' + participio 'finished'."
+  },
+  {
+    "id": 31,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete with the correct Future Passive form: The invitation ___________ (send) by the end of the month.",
+    "opciones": null,
+    "respuesta_correcta": "will be sent",
+    "explicacion": "El participio de 'send' es 'sent', resultando en 'will be sent'."
+  },
+  {
+    "id": 32,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Intermedio",
+    "tipo": "Pasiva Impersonal",
+    "enunciado": "Rewrite starting with 'It is...': People say that he is a good actor.",
+    "opciones": null,
+    "respuesta_correcta": "It is said that he is a good actor.",
+    "explicacion": "La estructura de pasiva impersonal se inicia con el pronombre 'It', seguido de 'is/was + participio + que/that...'."
+  },
+  {
+    "id": 33,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Difícil",
+    "tipo": "Pasiva Personal/Impersonal",
+    "enunciado": "Rewrite starting with 'He is...': People say that he is a good actor.",
+    "opciones": null,
+    "respuesta_correcta": "He is said to be a good actor.",
+    "explicacion": "En la pasiva personal, el sujeto de la subordinada pasa a ser el sujeto principal, seguido de 'is said + to + infinitivo'."
+  },
+  {
+    "id": 34,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Difícil",
+    "tipo": "Pasiva Personal/Impersonal",
+    "enunciado": "Rewrite starting with 'She is...': They believe that she will win the contest.",
+    "opciones": null,
+    "respuesta_correcta": "She is believed to win the contest.",
+    "explicacion": "Transformación a pasiva personal: 'Sujeto + is believed + to + infinitivo'."
+  },
+  {
+    "id": 35,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Difícil",
+    "tipo": "Infinitivos y Gerundios Pasivos",
+    "enunciado": "Complete with the passive form of the verb: My sister hopes ___________ (choose) for the school squad.",
+    "opciones": null,
+    "respuesta_correcta": "to be chosen",
+    "explicacion": "El verbo 'hope' requiere un infinitivo pasivo ('to be + participio pasado')."
+  },
+  {
+    "id": 36,
+    "categoria": "Voz Pasiva y Causativos",
+    "dificultad": "Difícil",
+    "tipo": "Infinitivos y Gerundios Pasivos",
+    "enunciado": "Complete with the passive form of the verb: Maria does not regret ___________ (give) a smaller role in the school play.",
+    "opciones": null,
+    "respuesta_correcta": "being given",
+    "explicacion": "El verbo 'regret' en este contexto se construye con un gerundio pasivo ('being + participio pasado')."
+  },
+  {
+    "id": 37,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Fácil",
+    "tipo": "Identificación",
+    "enunciado": "Identify the conditional type: 'If you heat water to 100°C, it boils.'",
+    "opciones": ["Cero Condicional", "Primer Condicional", "Segundo Condicional", "Tercer Condicional"],
+    "respuesta_correcta": "Cero Condicional",
+    "explicacion": "Se utiliza la Condicional Cero para leyes físicas, verdades generales o hechos científicos en Presente Simple."
+  },
+  {
+    "id": 38,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete (Zero Conditional): If you ___________ (freeze) water, it ___________ (turn) into ice.",
+    "opciones": null,
+    "respuesta_correcta": "freeze / turns",
+    "explicacion": "En la condicional cero, ambas oraciones (la condición y el resultado) van en Present Simple."
+  },
+  {
+    "id": 39,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete (First Conditional): If it ___________ (rain) tomorrow, we ___________ (stay) at home.",
+    "opciones": null,
+    "respuesta_correcta": "rains / will stay",
+    "explicacion": "Estructura del primer condicional: 'If + Present Simple, will + infinitivo' para situaciones futuras reales o probables."
+  },
+  {
+    "id": 40,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Intermedio",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete (Second Conditional): If I ___________ (have) a million dollars, I ___________ (buy) a big house.",
+    "opciones": null,
+    "respuesta_correcta": "had / would buy",
+    "explicacion": "Estructura del segundo condicional: 'If + Past Simple, would + infinitivo' para situaciones hipotéticas en el presente/futuro."
+  },
+  {
+    "id": 41,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Intermedio",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete (Third Conditional): If she ___________ (study) harder, she ___________ (pass) the test.",
+    "opciones": null,
+    "respuesta_correcta": "had studied / would have passed",
+    "explicacion": "Estructura del tercer condicional: 'If + Past Perfect, would have + participio pasado' para situaciones hipotéticas e irrealizables del pasado."
+  },
+  {
+    "id": 42,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Difícil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete (Mixed Conditional): If I ___________ (not miss) the train, I ___________ (be) on time now.",
+    "opciones": null,
+    "respuesta_correcta": "had not missed / would be",
+    "explicacion": "Condicional mixta: relaciona una condición no cumplida en el pasado ('had not missed') con una consecuencia presente ('would be now')."
+  },
+  {
+    "id": 43,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Intermedio",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite 'If she studies, she will pass the test' as a Second Conditional.",
+    "opciones": null,
+    "respuesta_correcta": "If she studied, she would pass the test.",
+    "explicacion": "Se transforma la estructura del 1.er condicional a la del 2.º condicional usando el verbo en pasado ('studied') y 'would'."
+  },
+  {
+    "id": 44,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Fácil",
+    "tipo": "Transformación",
+    "enunciado": "Rewrite 'If I were rich, I would buy a yacht' as a First Conditional.",
+    "opciones": null,
+    "respuesta_correcta": "If I am rich, I will buy a yacht.",
+    "explicacion": "Se cambia el segundo condicional a primero pasando el verbo de la condición a presente ('am') y el resultado a futuro ('will buy')."
+  },
+  {
+    "id": 45,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Intermedio",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete: If we ___________ (use) less plastic, the oceans would be cleaner.",
+    "opciones": null,
+    "respuesta_correcta": "used",
+    "explicacion": "Dado que el resultado utiliza 'would be', la frase condicional requiere un Past Simple ('used') por tratarse de un segundo condicional."
+  },
+  {
+    "id": 46,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Intermedio",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete: If I had known, I ___________ (attend) the protest.",
+    "opciones": null,
+    "respuesta_correcta": "would have attended",
+    "explicacion": "Con la cláusula 'If + Past Perfect' ('had known'), la consecuencia en el tercer condicional exige 'would have + participio pasado'."
+  },
+  {
+    "id": 47,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Condicional",
+    "enunciado": "Rewrite using Inversion: If you see Martin, tell him to call me.",
+    "opciones": null,
+    "respuesta_correcta": "Should you see Martin, tell him to call me.",
+    "explicacion": "En el primer condicional formal, se omite 'if' y se invierte el orden colocando el auxiliar 'Should' al principio."
+  },
+  {
+    "id": 48,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Condicional",
+    "enunciado": "Rewrite using Inversion: If I were a rich man, I would buy the house.",
+    "opciones": null,
+    "respuesta_correcta": "Were I a rich man, I would buy the house.",
+    "explicacion": "En el segundo condicional formal con el verbo 'were', se elimina 'if' e invierte el sujeto: 'Were + sujeto...'."
+  },
+  {
+    "id": 49,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Condicional",
+    "enunciado": "Rewrite using Inversion: If I had been told, I would have helped out.",
+    "opciones": null,
+    "respuesta_correcta": "Had I been told, I would have helped out.",
+    "explicacion": "Para el tercer condicional en estilo formal, se invierte colocándose 'Had' al inicio de la oración sin la conjunción 'if'."
+  },
+  {
+    "id": 50,
+    "categoria": "Condicionales e Inversión",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Condicional",
+    "enunciado": "Rewrite using Inversion: If I had known the truth, I would have acted differently.",
+    "opciones": null,
+    "respuesta_correcta": "Had I known the truth, I would have acted differently.",
+    "explicacion": "Inversión de tercer condicional: 'Had + sujeto + participio pasado...'."
+  },
+  {
+    "id": 51,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Intermedio",
+    "tipo": "Cleft Sentence",
+    "enunciado": "Rewrite to emphasize the subject (John): John finished the report.",
+    "opciones": null,
+    "respuesta_correcta": "It was John who finished the report.",
+    "explicacion": "Estructura de Cleft Sentence de sujeto: 'It is/was + sujeto + who/that + verbo...'."
+  },
+  {
+    "id": 52,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Intermedio",
+    "tipo": "Cleft Sentence",
+    "enunciado": "Rewrite to emphasize the object (a movie): We watched a movie last night.",
+    "opciones": null,
+    "respuesta_correcta": "It was a movie that we watched last night.",
+    "explicacion": "Estructura para dar énfasis al objeto: 'It was + objeto + that + sujeto + verbo...'."
+  },
+  {
+    "id": 53,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Intermedio",
+    "tipo": "Cleft Sentence",
+    "enunciado": "Rewrite to emphasize the time (last year): They built the new library last year.",
+    "opciones": null,
+    "respuesta_correcta": "It was last year that they built the new library.",
+    "explicacion": "Para enfatizar el complemento de tiempo: 'It was + expresión de tiempo + that...'."
+  },
+  {
+    "id": 54,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Cleft Sentence",
+    "enunciado": "Rewrite to emphasize the action (writes novels): Alice writes novels.",
+    "opciones": null,
+    "respuesta_correcta": "What Alice does is write novels.",
+    "explicacion": "Estructura 'Wh- cleft sentence' para enfatizar la acción: 'What + sujeto + does + is + verbo en infinitivo'."
+  },
+  {
+    "id": 55,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Cleft Sentence",
+    "enunciado": "Rewrite to emphasize the predicate: My brother plays computer games. That’s all he does.",
+    "opciones": null,
+    "respuesta_correcta": "All that my brother does is play computer games.",
+    "explicacion": "Estructura de énfasis con 'All': 'All (that) + sujeto + does + is + infinitivo'."
+  },
+  {
+    "id": 56,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using negative inversion: I had never seen such a piece.",
+    "opciones": null,
+    "respuesta_correcta": "Never had I seen such a piece.",
+    "explicacion": "Al colocar un adverbio negativo ('Never') al principio, la oración adopta la estructura interrogativa (adverbio + auxiliar + sujeto + verbo)."
+  },
+  {
+    "id": 57,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using negative inversion: They had rarely used that technique.",
+    "opciones": null,
+    "respuesta_correcta": "Rarely had they used that technique.",
+    "explicacion": "Inversión tras adverbio de frecuencia restrictivo 'Rarely': 'Rarely + had + sujeto + participio'."
+  },
+  {
+    "id": 58,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Intermedio",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using negative inversion: She rarely goes to the gym.",
+    "opciones": null,
+    "respuesta_correcta": "Rarely does she go to the gym.",
+    "explicacion": "En Present Simple, la inversión requiere el auxiliar 'does' delante del sujeto."
+  },
+  {
+    "id": 59,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using negative inversion: He knows little about life.",
+    "opciones": null,
+    "respuesta_correcta": "Little does he know about life.",
+    "explicacion": "La palabra restrictiva 'Little' al inicio obliga a invertir usando el auxiliar 'does'."
+  },
+  {
+    "id": 60,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using negative inversion: I have never seen such a beautiful painting.",
+    "opciones": null,
+    "respuesta_correcta": "Never before have I seen such a beautiful painting.",
+    "explicacion": "Inversión enfática con Present Perfect: 'Never before + have + sujeto + participio'."
+  },
+  {
+    "id": 61,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using 'No sooner': The argument started immediately after I had arrived at the house.",
+    "opciones": null,
+    "respuesta_correcta": "No sooner had I arrived at the house than the argument started.",
+    "explicacion": "Estructura formal: 'No sooner + had + sujeto + participio... than + Past Simple'."
+  },
+  {
+    "id": 62,
+    "categoria": "Cleft Sentences & Énfasis",
+    "dificultad": "Difícil",
+    "tipo": "Inversión Negativa",
+    "enunciado": "Rewrite using 'Not until': She wasn't able to buy a car until she started saving.",
+    "opciones": null,
+    "respuesta_correcta": "Not until she started saving was she able to buy a car.",
+    "explicacion": "Tras 'Not until + cláusula temporal', se invierte la cláusula principal ('was she able')."
+  },
+  {
+    "id": 63,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Modales Perfectos",
+    "enunciado": "Complete: He ___________ (study), he got everything right in the exam.",
+    "opciones": null,
+    "respuesta_correcta": "must have studied",
+    "explicacion": "'Must have + participio' expresa una deducción lógica o certeza casi absoluta sobre un hecho pasado."
+  },
+  {
+    "id": 64,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Modales Perfectos",
+    "enunciado": "Complete: She ___________ (forget) the deadline, but I'm not entirely sure.",
+    "opciones": null,
+    "respuesta_correcta": "might have forgotten",
+    "explicacion": "'Might have / Could have + participio' indica una posibilidad en el pasado."
+  },
+  {
+    "id": 65,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Modales Perfectos",
+    "enunciado": "Complete: He ___________ (forget) the experiment because he wrote it down in his notebook.",
+    "opciones": null,
+    "respuesta_correcta": "can't have forgotten",
+    "explicacion": "'Can't have + participio' expresa la imposibilidad deductiva de una acción pasada."
+  },
+  {
+    "id": 66,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite: It was a bad idea to ask Kyle to come to the party.",
+    "opciones": null,
+    "respuesta_correcta": "You shouldn't have asked Kyle to come to the party.",
+    "explicacion": "'Shouldn't have + participio' expresa arrepentimiento o crítica sobre un error cometido en el pasado."
+  },
+  {
+    "id": 67,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite: It wasn't necessary for me to wear that thick coat.",
+    "opciones": null,
+    "respuesta_correcta": "I didn't need to wear that thick coat.",
+    "explicacion": "'Didn't need to + infinitivo' o 'needn't have + participio' señalan la falta de necesidad en el pasado."
+  },
+  {
+    "id": 68,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Fácil",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite using 'need': It isn't necessary to pay for the school trip, it's free.",
+    "opciones": null,
+    "respuesta_correcta": "We don't need to pay for the school trip.",
+    "explicacion": "'Don't need to' indica ausencia de obligación o necesidad en tiempo presente."
+  },
+  {
+    "id": 69,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite: There's no way you saw my parents in town. They are in France.",
+    "opciones": null,
+    "respuesta_correcta": "You couldn't have seen my parents in town.",
+    "explicacion": "'Couldn't have + participio' se usa para afirmar que un hecho pasado era imposible."
+  },
+  {
+    "id": 70,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Intermedio",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite: My keys aren't in my bag. I'm sure I left them at home.",
+    "opciones": null,
+    "respuesta_correcta": "I must have left them at home.",
+    "explicacion": "Expresa certeza del hablante sobre una acción realizada en el pasado mediante 'must have + participio'."
+  },
+  {
+    "id": 71,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Fácil",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite: We are likely to spend Christmas at home this year.",
+    "opciones": null,
+    "respuesta_correcta": "We may spend Christmas at home this year.",
+    "explicacion": "El verbo modal 'may' expresa probabilidad razonable en el presente o futuro."
+  },
+  {
+    "id": 72,
+    "categoria": "Verbos Modales y Deducciones",
+    "dificultad": "Fácil",
+    "tipo": "Reescritura",
+    "enunciado": "Rewrite: This parking space is reserved for teachers. A student...",
+    "opciones": null,
+    "respuesta_correcta": "A student can't park in this parking space.",
+    "explicacion": "'Can't' o 'mustn't' expresan prohibición de realizar una acción."
+  },
+  {
+    "id": 73,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete: The book ___________ she lent me was amazing.",
+    "opciones": null,
+    "respuesta_correcta": "that / which",
+    "explicacion": "En cláusulas relativas definitorias para objetos se utiliza 'which' o 'that' (y se puede omitir si actúa como objeto)."
+  },
+  {
+    "id": 74,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Fácil",
+    "tipo": "Completar espacios",
+    "enunciado": "Complete: My teacher, ___________ lives nearby, is very kind.",
+    "opciones": null,
+    "respuesta_correcta": "who",
+    "explicacion": "En cláusulas relativas no definitorias (entre comas) referidas a personas se debe usar 'who'."
+  },
+  {
+    "id": 75,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Intermedio",
+    "tipo": "Preposiciones con Relativos",
+    "enunciado": "Combine using a prepositional relative clause: The person / I spoke (to)",
+    "opciones": null,
+    "respuesta_correcta": "The person to whom I spoke.",
+    "explicacion": "En registro formal, las preposiciones preceden al pronombre relativo 'whom' para personas."
+  },
+  {
+    "id": 76,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Intermedio",
+    "tipo": "Preposiciones con Relativos",
+    "enunciado": "Combine using a prepositional relative clause: The idea / you agree (with)",
+    "opciones": null,
+    "respuesta_correcta": "The idea with which you agree.",
+    "explicacion": "Para objetos en contexto formal, la preposición se antecede al pronombre 'which'."
+  },
+  {
+    "id": 77,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Fácil",
+    "tipo": "Selección",
+    "enunciado": "Choose the correct relative pronoun: The car ________ broke down belongs to my uncle.",
+    "opciones": ["who", "whose", "which", "where"],
+    "respuesta_correcta": "which",
+    "explicacion": "'Which' se utiliza para referirse a cosas o animales."
+  },
+  {
+    "id": 78,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Intermedio",
+    "tipo": "Selección",
+    "enunciado": "Choose the correct relative pronoun: The woman ________ daughter won the prize is an author.",
+    "opciones": ["who", "whom", "whose", "that"],
+    "respuesta_correcta": "whose",
+    "explicacion": "'Whose' es el pronombre relativo possessivo equivalente a 'cuyo/a/os/as'."
+  },
+  {
+    "id": 79,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Fácil",
+    "tipo": "Identificación",
+    "enunciado": "Identify the clause type: 'My sister, who lives in Madrid, is a lawyer.'",
+    "opciones": ["Cláusula Definitoria", "Cláusula No Definitoria"],
+    "respuesta_correcta": "Cláusula No Definitoria",
+    "explicacion": "Las cláusulas no definitorias añaden información extra no esencial y van separadas por comas."
+  },
+  {
+    "id": 80,
+    "categoria": "Cláusulas Relativas",
+    "dificultad": "Fácil",
+    "tipo": "Identificación",
+    "enunciado": "Identify the clause type: 'The man who called is here.'",
+    "opciones": ["Cláusula Definitoria", "Cláusula No Definitoria"],
+    "respuesta_correcta": "Cláusula Definitoria",
+    "explicacion": "Las cláusulas definitorias proporcionan información imprescindible para identificar al sujeto y no llevan comas."
+  },
+  {
+    "id": 81,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Letras Mudas",
+    "enunciado": "Which of these words does NOT include a silent 'h'? (hour, honor, hair, heir)",
+    "opciones": ["hour", "honor", "hair", "heir"],
+    "respuesta_correcta": "hair",
+    "explicacion": "En 'hair', la letra 'h' se pronuncia /h/, mientras que en hour, honor y heir es muda."
+  },
+  {
+    "id": 82,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Letras Mudas",
+    "enunciado": "Which word contains a silent 'l'? (half, hulk, halt, hold)",
+    "opciones": ["half", "hulk", "halt", "hold"],
+    "respuesta_correcta": "half",
+    "explicacion": "La palabra 'half' tiene una 'l' muda (/hɑːf/)."
+  },
+  {
+    "id": 83,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Letras Mudas",
+    "enunciado": "Identify the silent letter in the word 'knife'.",
+    "opciones": ["k", "n", "i", "f"],
+    "respuesta_correcta": "k",
+    "explicacion": "El grupo ortográfico inicial 'kn-' pronuncia únicamente el sonido /n/, siendo la 'k' muda."
+  },
+  {
+    "id": 84,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Letras Mudas",
+    "enunciado": "Identify the silent letter in the word 'autumn'.",
+    "opciones": ["a", "u", "t", "n"],
+    "respuesta_correcta": "n",
+    "explicacion": "En la combinación final '-mn', la letra 'n' no se pronuncia (/ˈɔːtəm/)."
+  },
+  {
+    "id": 85,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Intermedio",
+    "tipo": "Letras Mudas",
+    "enunciado": "In which two words is the letter 'u' NOT silent? (tongue, biscuit, build, guide, ruin, circuit, subtle, guard)",
+    "opciones": null,
+    "respuesta_correcta": "ruin, subtle",
+    "explicacion": "En 'ruin' y 'subtle', la letra 'u' no actúa como vocal muda para modificar consonantes (en 'subtle' la 'b' es muda, no la 'u')."
+  },
+  {
+    "id": 86,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Intermedio",
+    "tipo": "Regla de sufijo -ed",
+    "enunciado": "In which word are the letters '-ed' pronounced as /t/? (ruined, bothered, punished, behaved)",
+    "opciones": ["ruined", "bothered", "punished", "behaved"],
+    "respuesta_correcta": "punished",
+    "explicacion": "El sufijo '-ed' se pronuncia /t/ tras consonantes sordas como /ʃ/ en 'punish'."
+  },
+  {
+    "id": 87,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Intermedio",
+    "tipo": "Regla de sufijo -ed",
+    "enunciado": "In which word is '-ed' NOT pronounced as /d/? (married, echoed, begged, mended)",
+    "opciones": ["married", "echoed", "begged", "mended"],
+    "respuesta_correcta": "mended",
+    "explicacion": "Tras los sonidos /t/ o /d/ (como en 'mend'), el sufijo '-ed' se pronuncia /ɪd/ agregando una sílaba extra."
+  },
+  {
+    "id": 88,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Fonemas Consonánticos",
+    "enunciado": "Which of these words includes the phoneme /θ/? (then, this, thin, those)",
+    "opciones": ["then", "this", "thin", "those"],
+    "respuesta_correcta": "thin",
+    "explicacion": "'Thin' contiene el fonema fricativo sordo /θ/, mientras que 'then', 'this' y 'those' llevan la consonante sonora /ð/."
+  },
+  {
+    "id": 89,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Fonemas Consonánticos",
+    "enunciado": "Is the 's' in 'cheese' pronounced /s/ or /z/?",
+    "opciones": ["/s/", "/z/"],
+    "respuesta_correcta": "/z/",
+    "explicacion": "Entre vocales o al final tras vocal, la 's' suele sonorizarse en /z/."
+  },
+  {
+    "id": 90,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Intermedio",
+    "tipo": "Fonemas Consonánticos",
+    "enunciado": "How is 'ch' pronounced in 'chemist'? (/tʃ/, /ʃ/, or /k/?)",
+    "opciones": ["/tʃ/", "/ʃ/", "/k/"],
+    "respuesta_correcta": "/k/",
+    "explicacion": "En palabras de origen griego como 'chemist', 'chaos' o 'stomach', el dígrafo 'ch' se pronuncia /k/."
+  },
+  {
+    "id": 91,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Reglas de Vocales",
+    "enunciado": "Monosyllabic words with Consonant-Vowel-Consonant (CVC) like 'bin', 'cap', 'hot' have a ________ vowel sound.",
+    "opciones": ["short (corta)", "long (larga)"],
+    "respuesta_correcta": "short (corta)",
+    "explicacion": "Las palabras de una sola sílaba con patrón CVC generan sonidos vocálicos cortos."
+  },
+  {
+    "id": 92,
+    "categoria": "Fonética y Pronunciación",
+    "dificultad": "Fácil",
+    "tipo": "Reglas de Vocales",
+    "enunciado": "Words with Consonant-Vowel-Consonant + '-e' like 'bite', 'cape', 'hope' have a ________ vowel sound.",
+    "opciones": ["short (corta)", "long (larga)"],
+    "respuesta_correcta": "long (larga)",
+    "explicacion": "La 'e' final muda alarga la pronunciación de la vocal intermedia."
+  },
+  {
+    "id": 93,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Emparejamiento",
+    "enunciado": "Select the correct definition for the phrasal verb 'cope with':",
+    "opciones": ["deal successfully with a difficult situation", "cancel a planned event", "start a new hobby", "discover by chance"],
+    "respuesta_correcta": "deal successfully with a difficult situation",
+    "explicacion": "'Cope with' significa lidiar o hacer frente con éxito a una situación problemática."
+  },
+  {
+    "id": 94,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Emparejamiento",
+    "enunciado": "Select the correct definition for 'carry out':",
+    "opciones": ["perform or execute a task/experiment", "delay something", "tolerate bad behavior", "register for a course"],
+    "respuesta_correcta": "perform or execute a task/experiment",
+    "explicacion": "'Carry out' equivale a llevar a cabo, realizar o ejecutar un trabajo o investigación."
+  },
+  {
+    "id": 95,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Fácil",
+    "tipo": "Emparejamiento",
+    "enunciado": "Select the correct definition for 'run out of':",
+    "opciones": ["have no more left of something", "escape from a place", "chase someone", "invent an idea"],
+    "respuesta_correcta": "have no more left of something",
+    "explicacion": "'Run out of' expresa quedarse sin algo o agotar las existencias de un recurso."
+  },
+  {
+    "id": 96,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Sinónimos en contexto",
+    "enunciado": "Find a single-word synonym for 'major discovery' from scientific texts.",
+    "opciones": null,
+    "respuesta_correcta": "breakthrough",
+    "explicacion": "'Breakthrough' define un gran avance o descubrimiento significativo en la ciencia o medicina."
+  },
+  {
+    "id": 97,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Sinónimos en contexto",
+    "enunciado": "Find a synonym for 'happened' in formal/scientific contexts.",
+    "opciones": null,
+    "respuesta_correcta": "transpired / came about",
+    "explicacion": "En textos formales se emplean verbos como 'transpire' o el phrasal verb 'come about' para indicar que algo sucedió."
+  },
+  {
+    "id": 98,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Difícil",
+    "tipo": "Oraciones Complejas",
+    "enunciado": "Rewrite using 'such ... that': Smoking had a detrimental effect on her health. She got cancer.",
+    "opciones": null,
+    "respuesta_correcta": "Smoking had such a detrimental effect on her health that she got cancer.",
+    "explicacion": "La estructura 'such + adjetivo + sustantivo + that...' expresa una oración subordinada adverbial de resultado."
+  },
+  {
+    "id": 99,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Difícil",
+    "tipo": "Oraciones Complejas",
+    "enunciado": "Connect the ideas using 'due to the fact that': The scientists couldn't conduct an approach. There weren't enough people.",
+    "opciones": null,
+    "respuesta_correcta": "The scientists couldn't conduct an approach due to the fact that there weren't enough people.",
+    "explicacion": "'Due to the fact that' introduce una cláusula adverbial de causa antecediendo a una oración completa."
+  },
+  {
+    "id": 100,
+    "categoria": "Vocabulario y Phrasal Verbs",
+    "dificultad": "Intermedio",
+    "tipo": "Vocabulario en Contexto",
+    "enunciado": "Complete with the correct verb: He couldn't finish the project because he had to ___________ unexpected difficulties.",
+    "opciones": ["overcome", "deliberate", "foster", "transpire"],
+    "respuesta_correcta": "overcome",
+    "explicacion": "'Overcome' significa superar o vencer obstáculos e dificuldades."
+  }
+];
+
+    // -------------------------------------------------------------
+    // Application State Management
+    // -------------------------------------------------------------
+    let currentExamQuestions = [];
+    let userAnswers = {};
+    let examMode = 'practice'; // 'practice' or 'simulated'
+    let examSubmitted = false;
+    let timerInterval = null;
+    let secondsElapsed = 0;
+
+    // -------------------------------------------------------------
+    // Initialization & Lifecycle
+    // -------------------------------------------------------------
+    window.onload = function() {
+      generateQuickExam();
+      renderBankQuestionsList();
+    };
+
+    function updateCountDisplay(val) {
+      document.getElementById('count-display').innerText = `${val} Questões`;
+    }
+
+    function setMode(mode) {
+      examMode = mode;
+      const btnPractice = document.getElementById('btn-mode-practice');
+      const btnSimulated = document.getElementById('btn-mode-simulated');
+      const modeBadge = document.getElementById('active-exam-badge');
+      const modeDesc = document.getElementById('mode-description');
+      const timerBox = document.getElementById('timer-box');
+      const submitBox = document.getElementById('submit-button-container');
+
+      if (mode === 'practice') {
+        btnPractice.className = "py-2 px-3 rounded-lg text-center transition shadow-sm bg-white text-tania-navy font-bold";
+        btnSimulated.className = "py-2 px-3 rounded-lg text-center transition text-slate-600 hover:text-slate-900";
+        modeBadge.innerText = "Modo Prática";
+        modeBadge.className = "bg-tania-navy text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider";
+        modeDesc.innerHTML = `<i class="fa-solid fa-circle-info mr-1 text-tania-blue"></i> Feedback imediato e acesso a explicações detalhadas por questão.`;
+        timerBox.classList.add('hidden');
+        submitBox.classList.add('hidden');
+        stopTimer();
+      } else {
+        btnSimulated.className = "py-2 px-3 rounded-lg text-center transition shadow-sm bg-amber-500 text-slate-950 font-bold";
+        btnPractice.className = "py-2 px-3 rounded-lg text-center transition text-slate-600 hover:text-slate-900";
+        modeBadge.innerText = "Modo Simulado";
+        modeBadge.className = "bg-amber-500 text-slate-950 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider";
+        modeDesc.innerHTML = `<i class="fa-solid fa-clock mr-1 text-amber-600"></i> Cronómetro ativo. Submissão no final com pontuação total calculada.`;
+        timerBox.classList.remove('hidden');
+        submitBox.classList.remove('hidden');
+        startTimer();
+      }
+
+      // Re-render exam view with selected mode settings
+      renderExamQuestions();
+    }
+
+    // -------------------------------------------------------------
+    // Timer Logic
+    // -------------------------------------------------------------
+    function startTimer() {
+      stopTimer();
+      secondsElapsed = 0;
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        secondsElapsed++;
+        updateTimerDisplay();
+      }, 1000);
+    }
+
+    function stopTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(secondsElapsed / 60).toString().padStart(2, '0');
+      const secs = (secondsElapsed % 60).toString().padStart(2, '0');
+      document.getElementById('timer-display').innerText = `${mins}:${secs}`;
+    }
+
+    // -------------------------------------------------------------
+    // Exam Generator Logic
+    // -------------------------------------------------------------
+    function generateQuickExam() {
+      userAnswers = {};
+      examSubmitted = false;
+      document.getElementById('score-summary-bar').classList.add('hidden');
+
+      // Shuffle and pick 10 balanced questions
+      const shuffled = [...questionsDatabase].sort(() => 0.5 - Math.random());
+      currentExamQuestions = shuffled.slice(0, 10);
+
+      document.getElementById('exam-title-display').innerText = "Exame Aleatório Rápido (10 Questões)";
+      document.getElementById('active-count-badge').innerText = "10 Questões";
+
+      if (examMode === 'simulated') startTimer();
+      renderExamQuestions();
+    }
+
+    function generateCustomExam() {
+      userAnswers = {};
+      examSubmitted = false;
+      document.getElementById('score-summary-bar').classList.add('hidden');
+
+      const selectedCategory = document.getElementById('filter-category').value;
+      const selectedDifficulty = document.getElementById('filter-difficulty').value;
+      const selectedCount = parseInt(document.getElementById('filter-count').value);
+
+      let pool = [...questionsDatabase];
+
+      if (selectedCategory !== 'ALL') {
+        pool = pool.filter(q => q.categoria === selectedCategory);
+      }
+
+      if (selectedDifficulty !== 'ALL') {
+        pool = pool.filter(q => q.dificultad === selectedDifficulty);
+      }
+
+      if (pool.length === 0) {
+        alertModal("Nenhuma questão encontrada com os filtros selecionados! Mostrando todas.");
+        pool = [...questionsDatabase];
+      }
+
+      pool.sort(() => 0.5 - Math.random());
+      currentExamQuestions = pool.slice(0, Math.min(selectedCount, pool.length));
+
+      const titleCat = selectedCategory === 'ALL' ? 'Misto' : selectedCategory;
+      document.getElementById('exam-title-display').innerText = `Exame Personalizado: ${titleCat}`;
+      document.getElementById('active-count-badge').innerText = `${currentExamQuestions.length} Questões`;
+
+      if (examMode === 'simulated') startTimer();
+      renderExamQuestions();
+    }
+
+    function resetCurrentExam() {
+      userAnswers = {};
+      examSubmitted = false;
+      document.getElementById('score-summary-bar').classList.add('hidden');
+      if (examMode === 'simulated') startTimer();
+      renderExamQuestions();
+    }
+
+    // -------------------------------------------------------------
+    // Rendering Questions
+    // -------------------------------------------------------------
+    function renderExamQuestions() {
+      const container = document.getElementById('questions-container');
+      container.innerHTML = '';
+
+      if (currentExamQuestions.length === 0) {
+        container.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border text-slate-500">Nenhuma questão selecionada.</div>`;
+        return;
+      }
+
+      currentExamQuestions.forEach((q, index) => {
+        const qNum = index + 1;
+        const card = document.createElement('div');
+        card.className = "question-card bg-white rounded-2xl shadow-sm border border-slate-200/90 p-6 space-y-4 transition hover:border-slate-300 relative";
+        
+        // Difficulty Badge Color
+        let diffColor = "bg-emerald-50 text-emerald-700 border-emerald-200";
+        if (q.dificultad === 'Intermedio') diffColor = "bg-amber-50 text-amber-700 border-amber-200";
+        if (q.dificultad === 'Difícil') diffColor = "bg-rose-50 text-rose-700 border-rose-200";
+
+        // HTML for Question Header
+        let cardHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+            <div class="flex items-center space-x-2">
+              <span class="w-7 h-7 rounded-lg bg-tania-navy text-white font-bold text-xs flex items-center justify-center font-serif">
+                ${qNum}
+              </span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-tania-blue bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100">
+                ${q.categoria}
+              </span>
+            </div>
+            <div class="flex items-center space-x-2 text-xs">
+              <span class="px-2 py-0.5 rounded-md font-medium border ${diffColor}">
+                ${q.dificultad}
+              </span>
+              <span class="px-2 py-0.5 rounded-md font-medium bg-slate-100 text-slate-600 border">
+                ${q.tipo}
+              </span>
+            </div>
+          </div>
+
+          <!-- Question Prompt -->
+          <div>
+            <p class="text-sm sm:text-base font-semibold text-slate-900 leading-relaxed font-serif">
+              ${escapeHTML(q.enunciado)}
+            </p>
+          </div>
+        `;
+
+        // Answer Inputs (Multiple Choice vs Free Text)
+        const savedAnswer = userAnswers[q.id] || '';
+
+        if (q.opciones && Array.isArray(q.opciones) && q.opciones.length > 0) {
+          // Multiple Choice Options
+          cardHTML += `<div class="space-y-2 pt-1">`;
+          q.opciones.forEach((opt, optIdx) => {
+            const isChecked = savedAnswer === opt ? 'checked' : '';
+            cardHTML += `
+              <label class="flex items-center p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition text-xs sm:text-sm">
+                <input type="radio" name="question_${q.id}" value="${escapeHTML(opt)}" ${isChecked} onchange="registerAnswer(${q.id}, this.value)" class="w-4 h-4 text-tania-navy focus:ring-tania-blue border-slate-300">
+                <span class="ml-3 font-medium text-slate-800">${escapeHTML(opt)}</span>
+              </label>
+            `;
+          });
+          cardHTML += `</div>`;
+        } else {
+          // Input text box for transformation/gap fill
+          cardHTML += `
+            <div class="pt-1">
+              <input type="text" id="input_q_${q.id}" value="${escapeHTML(savedAnswer)}" oninput="registerAnswer(${q.id}, this.value)" placeholder="Escreva a sua resposta aqui..." class="w-full text-xs sm:text-sm border border-slate-300 rounded-xl px-4 py-3 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-tania-blue transition">
+            </div>
+          `;
+        }
+
+        // Practice Mode Actions (Check Answer & Explanation Toggle)
+        if (examMode === 'practice') {
+          const isAnswered = savedAnswer.trim().length > 0;
+          const isCorrect = isAnswered && checkIndividualAnswer(q, savedAnswer);
+
+          cardHTML += `
+            <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+              <button onclick="toggleExplanation(${q.id})" class="text-xs font-semibold text-tania-blue hover:text-tania-navy flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Ver Resposta Correta & Explicação</span>
+              </button>
+
+              ${isAnswered ? `
+                <span class="text-xs font-bold px-2.5 py-1 rounded-lg flex items-center space-x-1.5 ${isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                  <i class="fa-solid ${isCorrect ? 'fa-circle-check text-emerald-600' : 'fa-circle-xmark text-rose-600'}"></i>
+                  <span>${isCorrect ? 'Correto!' : 'Incorreto'}</span>
+                </span>
+              ` : ''}
+            </div>
+
+            <!-- Explanation Box (Initially Hidden) -->
+            <div id="explanation_${q.id}" class="hidden mt-3 p-4 bg-amber-50/80 border border-amber-200 rounded-xl space-y-2 text-xs">
+              <div class="font-bold text-amber-900 flex items-center space-x-1.5">
+                <i class="fa-solid fa-key text-amber-600"></i>
+                <span>Resposta Correta:</span>
+                <span class="font-serif text-slate-900 bg-white px-2 py-0.5 rounded border border-amber-300">${escapeHTML(q.respuesta_correcta)}</span>
+              </div>
+              <p class="text-slate-700 leading-relaxed">
+                <strong>Explicação:</strong> ${escapeHTML(q.explicacion)}
+              </p>
+            </div>
+          `;
+        } else if (examSubmitted) {
+          // Simulated Mode After Submission
+          const isCorrect = checkIndividualAnswer(q, savedAnswer);
+          cardHTML += `
+            <div class="mt-3 p-3 rounded-xl border ${isCorrect ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'} text-xs space-y-1">
+              <div class="font-bold ${isCorrect ? 'text-emerald-900' : 'text-rose-900'} flex items-center space-x-2">
+                <i class="fa-solid ${isCorrect ? 'fa-circle-check text-emerald-600' : 'fa-circle-xmark text-rose-600'}"></i>
+                <span>${isCorrect ? 'Resposta Correta (+1.0 pt)' : 'Resposta Incorreta (0.0 pt)'}</span>
+              </div>
+              <p class="text-slate-700"><strong>Sua Resposta:</strong> ${savedAnswer ? escapeHTML(savedAnswer) : '<i>(Em branco)</i>'}</p>
+              <p class="text-slate-700"><strong>Resposta Esperada:</strong> <span class="font-bold">${escapeHTML(q.respuesta_correcta)}</span></p>
+              <p class="text-slate-600 pt-1 border-t border-slate-200/60 mt-1"><strong>Nota explicativa:</strong> ${escapeHTML(q.explicacion)}</p>
+            </div>
+          `;
+        }
+
+        card.innerHTML = cardHTML;
+        container.appendChild(card);
+      });
+    }
+
+    // -------------------------------------------------------------
+    // Answer Registration & Verification Logic
+    // -------------------------------------------------------------
+    function registerAnswer(questionId, value) {
+      userAnswers[questionId] = value;
+      // In practice mode, dynamically refresh status badge without full re-render
+      if (examMode === 'practice') {
+        const qObj = currentExamQuestions.find(q => q.id === questionId);
+        if (qObj) {
+          renderExamQuestions();
+        }
+      }
+    }
+
+    function normalizeText(str) {
+      if (!str) return '';
+      return str.toLowerCase()
+        .replace(/[’']/g, "'")
+        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function checkIndividualAnswer(qObj, userAns) {
+      if (!userAns || !userAns.trim()) return false;
+      
+      const normUser = normalizeText(userAns);
+      const normCorrect = normalizeText(qObj.respuesta_correcta);
+
+      // Direct match
+      if (normUser === normCorrect) return true;
+
+      // Check if correct answer has options like "that / which" or "freeze / turns"
+      if (normCorrect.includes(' / ')) {
+        const parts = normCorrect.split(' / ').map(p => normalizeText(p));
+        // If user matched any valid slash alternative
+        if (parts.includes(normUser)) return true;
+      }
+
+      return false;
+    }
+
+    function toggleExplanation(qId) {
+      const box = document.getElementById(`explanation_${qId}`);
+      if (box) {
+        box.classList.toggle('hidden');
+      }
+    }
+
+    // -------------------------------------------------------------
+    // Submission (Simulated Mode)
+    // -------------------------------------------------------------
+    function submitSimulatedExam() {
+      stopTimer();
+      examSubmitted = true;
+
+      let totalScore = 0;
+      let correctCount = 0;
+      const totalQs = currentExamQuestions.length;
+
+      currentExamQuestions.forEach(q => {
+        const uAns = userAnswers[q.id] || '';
+        if (checkIndividualAnswer(q, uAns)) {
+          correctCount++;
+        }
+      });
+
+      // Calculate score out of 10 (Selectividad scale)
+      totalScore = ((correctCount / totalQs) * 10).toFixed(1);
+
+      const scoreCircle = document.getElementById('score-circle');
+      const scoreDetails = document.getElementById('score-details');
+      const summaryBar = document.getElementById('score-summary-bar');
+
+      scoreCircle.innerText = `${totalScore}`;
+      scoreDetails.innerText = `Acertou ${correctCount} de ${totalQs} questões (${Math.round((correctCount/totalQs)*100)}%) em ${document.getElementById('timer-display').innerText}.`;
+      summaryBar.classList.remove('hidden');
+
+      // Scroll to top of results
+      summaryBar.scrollIntoView({ behavior: 'smooth' });
+
+      renderExamQuestions();
+    }
+
+    // -------------------------------------------------------------
+    // Printable Exam Sheet Generator
+    // -------------------------------------------------------------
+    function triggerPrint(includeAnswersKey) {
+      const printTitle = document.getElementById('print-exam-title');
+      const printSub = document.getElementById('print-exam-subtitle');
+
+      if (includeAnswersKey) {
+        printTitle.innerText = "Exam Answer Key & Teacher Solutions";
+        printSub.innerText = "Official solution sheet with pedagogical explanations.";
+      } else {
+        printTitle.innerText = "English Language Assessment Exam";
+        printSub.innerText = "Read all questions carefully. Answer in clear, legible handwriting.";
+      }
+
+      // Automatically show explanations if printing answer key
+      currentExamQuestions.forEach(q => {
+        const expBox = document.getElementById(`explanation_${q.id}`);
+        if (expBox) {
+          if (includeAnswersKey) expBox.classList.remove('hidden');
+          else expBox.classList.add('hidden');
+        }
+      });
+
+      window.print();
+    }
+
+    // -------------------------------------------------------------
+    // Question Bank Modal Logic
+    // -------------------------------------------------------------
+    function toggleQuestionBankModal() {
+      const modal = document.getElementById('modal-bank');
+      modal.classList.toggle('hidden');
+    }
+
+    function filterBankQuestions() {
+      const search = document.getElementById('bank-search').value.toLowerCase();
+      const cat = document.getElementById('bank-category-filter').value;
+      renderBankQuestionsList(search, cat);
+    }
+
+    function renderBankQuestionsList(search = '', categoryFilter = 'ALL') {
+      const list = document.getElementById('bank-questions-list');
+      list.innerHTML = '';
+
+      let filtered = questionsDatabase.filter(q => {
+        const matchesCat = (categoryFilter === 'ALL' || q.categoria === categoryFilter);
+        const matchesSearch = q.enunciado.toLowerCase().includes(search) || 
+                              q.respuesta_correcta.toLowerCase().includes(search) ||
+                              q.categoria.toLowerCase().includes(search);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        list.innerHTML = `<p class="text-xs text-slate-500 text-center py-6">Nenhuma questão corresponde à pesquisa.</p>`;
+        return;
+      }
+
+      filtered.forEach(q => {
+        const item = document.createElement('div');
+        item.className = "p-4 border rounded-xl bg-slate-50/50 hover:bg-white transition text-xs space-y-2";
+        item.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-tania-navy">#${q.id} • ${escapeHTML(q.categoria)}</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-semibold border ${getDiffBadgeClass(q.dificultad)}">${q.dificultad}</span>
+          </div>
+          <p class="font-serif text-slate-900 font-medium">${escapeHTML(q.enunciado)}</p>
+          <div class="p-2 bg-emerald-50 text-emerald-900 rounded border border-emerald-100">
+            <strong>Resposta:</strong> ${escapeHTML(q.respuesta_correcta)}
+          </div>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    function getDiffBadgeClass(diff) {
+      if (diff === 'Fácil') return 'bg-emerald-100 text-emerald-800 border-emerald-200';
+      if (diff === 'Intermedio') return 'bg-amber-100 text-amber-800 border-amber-200';
+      return 'bg-rose-100 text-rose-800 border-rose-200';
+    }
+
+    function escapeHTML(str) {
+      if (!str) return '';
+      return str.replace(/[&<>'"]/g, 
+        tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag)
+      );
+    }
+
+    function alertModal(msg) {
+      // Custom friendly message toast instead of alert()
+      const toast = document.createElement('div');
+      toast.className = "fixed bottom-6 right-6 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl z-50 text-xs font-semibold flex items-center space-x-2 border border-amber-400/40";
+      toast.innerHTML = `<i class="fa-solid fa-circle-info text-amber-400"></i> <span>${escapeHTML(msg)}</span>`;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3500);
+    }
+  </script>
+</body>
+</html>
